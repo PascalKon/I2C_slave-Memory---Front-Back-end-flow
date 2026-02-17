@@ -1,0 +1,57 @@
+[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Verification Metrics","All Average Grd":"100%","All Cov":"1292 / 1292 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Types","All Average Grd":"100%","All Cov":"829 / 829 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"$unit","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"uvm_pkg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i2c_pkg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i2c_env_pkg","All Average Grd":"100%","All Cov":"379 / 379 (100%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i2c_coverage::i2c_reg_access_cg","All Average Grd":"100%","All Cov":"379 / 379 (100%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cp_register","All Average Grd":"100%","All Cov":"36 / 36 (100%)","Assertion Status Grd":"n/a","bins_json":"bin0.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cp_operation","All Average Grd":"100%","All Cov":"2 / 2 (100%)","Assertion Status Grd":"n/a","bins_json":"bin1.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cp_i2c_address","All Average Grd":"100%","All Cov":"8 / 8 (100%)","Assertion Status Grd":"n/a","bins_json":"bin2.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"reg_vs_operation","All Average Grd":"100%","All Cov":"69 / 69 (100%)","Assertion Status Grd":"n/a","columns":"cp_register;cp_operation","bins_json":"bin3.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"addr_vs_operation","All Average Grd":"100%","All Cov":"264 / 264 (100%)","Assertion Status Grd":"n/a","columns":"cp_i2c_address;cp_operation;cp_register","bins_json":"bin4.json"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"top","All Average Grd":"100%","All Cov":"20 / 20 (100%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"I2CAndMemory","All Average Grd":"100%","All Cov":"31 / 31 (100%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"I2C_Slave","All Average Grd":"100%","All Cov":"275 / 275 (100%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"state","All Average Grd":"100%","All Cov":"24 / 24 (100%)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Memory","All Average Grd":"100%","All Cov":"88 / 88 (100%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"register_file_assertions","All Average Grd":"100%","All Cov":"23 / 23 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"no_adc_overwrite_during_read","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"adc_data_consistency","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"no_write_enable_on_adc_during_read","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i2c_if","All Average Grd":"100%","All Cov":"13 / 13 (100%)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Instances","All Average Grd":"100%","All Cov":"463 / 463 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"$unit","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"uvm_pkg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"uvm_test_top","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"env","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cov","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i2c_pkg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i2c_env_pkg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"top","All Average Grd":"100%","All Cov":"463 / 463 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"dut","All Average Grd":"100%","All Cov":"417 / 417 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i2c_inst","All Average Grd":"100%","All Cov":"275 / 275 (100%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"state","All Average Grd":"100%","All Cov":"24 / 24 (100%)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"mem_inst","All Average Grd":"100%","All Cov":"111 / 111 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"regfile_asrt","All Average Grd":"100%","All Cov":"23 / 23 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"no_adc_overwrite_during_read","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"adc_data_consistency","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"no_write_enable_on_adc_during_read","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i2c_vif_master","All Average Grd":"100%","All Cov":"13 / 13 (100%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i2c_vif_slave","All Average Grd":"100%","All Cov":"13 / 13 (100%)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]

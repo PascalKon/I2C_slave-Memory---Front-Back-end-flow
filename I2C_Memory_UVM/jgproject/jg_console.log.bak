@@ -1,0 +1,88 @@
+2025-11-04 10:24:59.799477 (3948855) main____ INFO    ----------------------------------------
+2025-11-04 10:24:59.799569 (3948855) main____ INFO    Jasper version info
+2025-11-04 10:24:59.799577 (3948855) main____ INFO      tool      : Jasper 2022.09
+2025-11-04 10:24:59.799585 (3948855) main____ INFO      version   : 2022.09 FCS 64 bits
+2025-11-04 10:24:59.799591 (3948855) main____ INFO      build date: 2022.09.22 12:46:24 UTC
+2025-11-04 10:24:59.799596 (3948855) main____ INFO    ----------------------------------------
+2025-11-04 10:24:59.799600 (3948855) main____ INFO    Runtime info:
+2025-11-04 10:24:59.799605 (3948855) main____ INFO      platform  : Linux 5.14.0-570.52.1.el9_6.x86_64 x86_64
+2025-11-04 10:24:59.799616 (3948855) main____ INFO      hostname  : cn89.it.auth.gr
+2025-11-04 10:24:59.799621 (3948855) main____ INFO      pid       : 3948855
+2025-11-04 10:24:59.799625 (3948855) main____ INFO      arguments : '-style' 'windows' '-allow_unsupported_OS' '-tcl' 'jasper.tcl'
+2025-11-04 10:24:59.799635 (3948855) main____ INFO      locale    : ANSI_X3.4-1968
+2025-11-04 10:24:59.799639 (3948855) main____ INFO    ----------------------------------------
+2025-11-04 10:24:59.799642 (3948855) main____ INFO    System resource limits info:
+2025-11-04 10:24:59.799647 (3948855) main____ INFO      virtual memory: unlimited
+2025-11-04 10:24:59.799651 (3948855) main____ INFO      cpu time      : unlimited
+2025-11-04 10:24:59.799661 (3948855) main____ INFO      processes     : 2614
+2025-11-04 10:24:59.799671 (3948855) main____ INFO      stack size    : 8388608 B
+2025-11-04 10:24:59.799676 (3948855) main____ INFO      core file size: unlimited
+2025-11-04 10:24:59.799680 (3948855) main____ INFO      open files    : 1024
+2025-11-04 10:24:59.799685 (3948855) main____ INFO      file size     : unlimited
+2025-11-04 10:24:59.799688 (3948855) main____ INFO    ----------------------------------------
+2025-11-04 10:24:59.799692 (3948855) main____ INFO    Memory statistics:
+2025-11-04 10:24:59.799696 (3948855) main____ INFO      total physical memory  : 49034332 kB
+2025-11-04 10:24:59.799700 (3948855) main____ INFO      free physical memory   : 9184132 kB
+2025-11-04 10:24:59.799704 (3948855) main____ INFO      committed address space: 53288768 kB
+2025-11-04 10:24:59.799708 (3948855) main____ INFO    ----------------------------------------
+2025-11-04 10:24:59.801181 (3948855) main____ INFO    Important environment variables:
+2025-11-04 10:24:59.801216 (3948855) main____ INFO      CDS_ASSURA            : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/ASSURA'
+2025-11-04 10:24:59.801224 (3948855) main____ INFO      CDS_AUTO_64BIT        : 'ALL'
+2025-11-04 10:24:59.801232 (3948855) main____ INFO      CDS_CONFRML           : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/CONFRML'
+2025-11-04 10:24:59.801239 (3948855) main____ INFO      CDS_GENUS             : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/GENUS'
+2025-11-04 10:24:59.801245 (3948855) main____ INFO      CDS_IC                : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/IC'
+2025-11-04 10:24:59.801252 (3948855) main____ INFO      CDS_INNOVUSEXPORT     : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/INNOVUSEXPORT'
+2025-11-04 10:24:59.801258 (3948855) main____ INFO      CDS_JASPER            : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/JASPER'
+2025-11-04 10:24:59.801265 (3948855) main____ INFO      CDS_LIC_FILE          : '5280@cadence-r.it.auth.gr'
+2025-11-04 10:24:59.801271 (3948855) main____ INFO      CDS_MODUS             : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/MODUS'
+2025-11-04 10:24:59.801279 (3948855) main____ INFO      CDS_MVS               : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/MVS'
+2025-11-04 10:24:59.801285 (3948855) main____ INFO      CDS_Netlisting_Mode   : 'Analog'
+2025-11-04 10:24:59.801292 (3948855) main____ INFO      CDS_PVS               : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/PVS'
+2025-11-04 10:24:59.801299 (3948855) main____ INFO      CDS_QUANTUS           : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/QUANTUS'
+2025-11-04 10:24:59.801305 (3948855) main____ INFO      CDS_SPECTRE           : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/SPECTRE'
+2025-11-04 10:24:59.801326 (3948855) main____ INFO      CDS_SSV               : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/SSV'
+2025-11-04 10:24:59.801333 (3948855) main____ INFO      CDS_TOP               : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86'
+2025-11-04 10:24:59.801339 (3948855) main____ INFO      CDS_VMANAGER          : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/VMANAGER'
+2025-11-04 10:24:59.801346 (3948855) main____ INFO      CDS_XCELIUM           : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/XCELIUM'
+2025-11-04 10:24:59.801351 (3948855) main____ INFO      DISPLAY               : ':5.0'
+2025-11-04 10:24:59.801357 (3948855) main____ INFO      JASPER_INSTALL_DIR    : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/JASPER'
+2025-11-04 10:24:59.801363 (3948855) main____ INFO      JASPER_KERNEL_CHECK   : '1'
+2025-11-04 10:24:59.801368 (3948855) main____ INFO      JASPER_MACRO_LINEFILES: '1'
+2025-11-04 10:24:59.801374 (3948855) main____ INFO      JASPER_OS_CHECK       : '0'
+2025-11-04 10:24:59.801380 (3948855) main____ INFO      JG_MACRO_LINEFILES    : '1'
+2025-11-04 10:24:59.801385 (3948855) main____ INFO      LANG                  : 'C'
+2025-11-04 10:24:59.801391 (3948855) main____ INFO      LC_NUMERIC            : 'en_US.UTF-8'
+2025-11-04 10:24:59.801398 (3948855) main____ INFO      TMPDIR                : '/tmp'
+2025-11-04 10:24:59.801403 (3948855) main____ INFO    ----------------------------------------
+2025-11-04 10:24:59.851475 (3948855) lic_core INFO    Initializing license system ...
+2025-11-04 10:25:00.035475 (3948855) lic_core INFO    ... license system initialized.
+2025-11-04 10:25:00.126482 (3948855) lic__man INFO    Claim 'main' for <ui>.
+2025-11-04 10:25:00.128399 (3948855) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2025-11-04 10:25:00.142766 (3948855) lic_core INFO    ... (1) checkout succeeded
+2025-11-04 10:25:00.142862 (3948855) lic__man INFO    Claim 'fpv' for <ui>.
+2025-11-04 10:25:00.142893 (3948855) lic_core INFO    (2) checking out 'jasper_fpv' ...
+2025-11-04 10:25:00.147458 (3948855) lic_core INFO    ... (2) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2025-11-04 10:25:00.147488 (3948855) lic_core INFO    (3) checking out 'jasper_fao' ...
+2025-11-04 10:25:00.158199 (3948855) lic_core INFO    ... (3) checkout succeeded
+2025-11-04 10:25:00.370956 (3948855) main____ INFO    Tool inactivity delay is 480000 ms.
+2025-11-04 10:25:03.751137 (3948855) lic__man INFO    Claim 'fpv' for <ui>.
+2025-11-04 10:25:05.307531 (3948855) lic__man INFO    Unclaim 'fpv' for <ui>.
+2025-11-04 10:25:05.307595 (3948855) lic__man INFO    Claim 'fpv' for <ui>.
+2025-11-04 10:25:05.320452 (3948855) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2025-11-04 10:25:05.323298 (3948855) session_ INFO    Analysis session with session id 'session_0' started (pid: 3949087)
+2025-11-04 10:25:51.265405 (3948855) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:38184)
+2025-11-04 10:25:54.831799 (3948855) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2025-11-04 10:25:54.832242 (3948855) lic__man INFO    Unclaim everything for 'session_0'.
+2025-11-04 10:26:02.232140 (3948855) lic__man INFO    Unclaim everything for 'session_0'.
+2025-11-04 10:26:34.017307 (3948855) lic__man INFO    Claim 'fpv' for 'session_0'.
+2025-11-04 10:26:34.017353 (3948855) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2025-11-04 10:26:44.156534 (3948855) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2025-11-04 10:34:43.936131 (3948855) lic__man INFO    Entering idle state.
+2025-11-04 10:35:06.853104 (3948855) lic__man INFO    Leaving idle state.
+2025-11-04 10:43:06.936851 (3948855) lic__man INFO    Entering idle state.
+2025-11-04 18:03:23.763937 (3948855) lic__man INFO    Leaving idle state.
+2025-11-04 18:03:23.850785 (3948855) main____ INFO    About to exit: requested from GUI
+2025-11-04 18:03:23.986591 (3948855) session_ INFO    Analysis session 'session_0' disconnected.
+2025-11-04 18:03:24.030571 (3948855) lic_core INFO    (1) checkin jasper_interactive
+2025-11-04 18:03:24.031551 (3948855) lic_core INFO    (3) checkin jasper_fao
+2025-11-04 18:03:24.037593 (3948855) main____ INFO    Exiting with status 0.

@@ -1,0 +1,95 @@
+2026-02-05 13:53:09.027075 (2891257) main____ INFO    ----------------------------------------
+2026-02-05 13:53:09.027998 (2891257) main____ INFO    Jasper version info
+2026-02-05 13:53:09.028014 (2891257) main____ INFO      tool      : Jasper 2022.09
+2026-02-05 13:53:09.028023 (2891257) main____ INFO      version   : 2022.09 FCS 64 bits
+2026-02-05 13:53:09.028029 (2891257) main____ INFO      build date: 2022.09.22 12:46:24 UTC
+2026-02-05 13:53:09.028034 (2891257) main____ INFO    ----------------------------------------
+2026-02-05 13:53:09.028038 (2891257) main____ INFO    Runtime info:
+2026-02-05 13:53:09.028044 (2891257) main____ INFO      platform  : Linux 5.14.0-570.52.1.el9_6.x86_64 x86_64
+2026-02-05 13:53:09.028053 (2891257) main____ INFO      hostname  : cn88.it.auth.gr
+2026-02-05 13:53:09.028058 (2891257) main____ INFO      pid       : 2891257
+2026-02-05 13:53:09.028063 (2891257) main____ INFO      arguments : '-style' 'windows' '-allow_unsupported_OS' '-tcl' 'jasper.tcl'
+2026-02-05 13:53:09.028072 (2891257) main____ INFO      locale    : ANSI_X3.4-1968
+2026-02-05 13:53:09.028076 (2891257) main____ INFO    ----------------------------------------
+2026-02-05 13:53:09.028080 (2891257) main____ INFO    System resource limits info:
+2026-02-05 13:53:09.028085 (2891257) main____ INFO      virtual memory: unlimited
+2026-02-05 13:53:09.028090 (2891257) main____ INFO      cpu time      : unlimited
+2026-02-05 13:53:09.028099 (2891257) main____ INFO      processes     : 2614
+2026-02-05 13:53:09.028108 (2891257) main____ INFO      stack size    : 8388608 B
+2026-02-05 13:53:09.028113 (2891257) main____ INFO      core file size: unlimited
+2026-02-05 13:53:09.028118 (2891257) main____ INFO      open files    : 1024
+2026-02-05 13:53:09.028122 (2891257) main____ INFO      file size     : unlimited
+2026-02-05 13:53:09.028126 (2891257) main____ INFO    ----------------------------------------
+2026-02-05 13:53:09.028130 (2891257) main____ INFO    Memory statistics:
+2026-02-05 13:53:09.028134 (2891257) main____ INFO      total physical memory  : 49034356 kB
+2026-02-05 13:53:09.028138 (2891257) main____ INFO      free physical memory   : 4292248 kB
+2026-02-05 13:53:09.028142 (2891257) main____ INFO      committed address space: 64959804 kB
+2026-02-05 13:53:09.028146 (2891257) main____ INFO    ----------------------------------------
+2026-02-05 13:53:09.029727 (2891257) main____ INFO    Important environment variables:
+2026-02-05 13:53:09.029748 (2891257) main____ INFO      CDS_ASSURA            : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/ASSURA'
+2026-02-05 13:53:09.029757 (2891257) main____ INFO      CDS_AUTO_64BIT        : 'ALL'
+2026-02-05 13:53:09.029766 (2891257) main____ INFO      CDS_CONFRML           : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/CONFRML'
+2026-02-05 13:53:09.029772 (2891257) main____ INFO      CDS_DDIEXPORT         : '/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/DDIEXPORT_22.33.000'
+2026-02-05 13:53:09.029779 (2891257) main____ INFO      CDS_GENUS             : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/GENUS'
+2026-02-05 13:53:09.029785 (2891257) main____ INFO      CDS_IC                : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/IC'
+2026-02-05 13:53:09.029792 (2891257) main____ INFO      CDS_INNOVUS           : '/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/DDIEXPORT_22.33.000/INNOVUS'
+2026-02-05 13:53:09.029813 (2891257) main____ INFO      CDS_INNOVUSEXPORT     : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/INNOVUSEXPORT'
+2026-02-05 13:53:09.029821 (2891257) main____ INFO      CDS_JASPER            : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/JASPER'
+2026-02-05 13:53:09.029828 (2891257) main____ INFO      CDS_JLS               : '/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/DDIEXPORT_22.33.000/JLS'
+2026-02-05 13:53:09.029834 (2891257) main____ INFO      CDS_LIC_FILE          : '5280@cadence-r.it.auth.gr'
+2026-02-05 13:53:09.029840 (2891257) main____ INFO      CDS_LITMUS            : '/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/LITMUS_23.10.300'
+2026-02-05 13:53:09.029846 (2891257) main____ INFO      CDS_MODUS             : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/MODUS'
+2026-02-05 13:53:09.029859 (2891257) main____ INFO      CDS_MVS               : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/MVS'
+2026-02-05 13:53:09.029864 (2891257) main____ INFO      CDS_Netlisting_Mode   : 'Analog'
+2026-02-05 13:53:09.029871 (2891257) main____ INFO      CDS_PEGASUS           : '/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/PEGASUS_23.11.000'
+2026-02-05 13:53:09.029878 (2891257) main____ INFO      CDS_PEGASUSDFM        : '/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/PEGASUSDFM_23.11.000'
+2026-02-05 13:53:09.029884 (2891257) main____ INFO      CDS_PVS               : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/PVS'
+2026-02-05 13:53:09.029891 (2891257) main____ INFO      CDS_QUANTUS           : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/QUANTUS'
+2026-02-05 13:53:09.029897 (2891257) main____ INFO      CDS_SPECTRE           : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/SPECTRE'
+2026-02-05 13:53:09.029904 (2891257) main____ INFO      CDS_SSV               : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/SSV'
+2026-02-05 13:53:09.029910 (2891257) main____ INFO      CDS_TOP               : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86'
+2026-02-05 13:53:09.029916 (2891257) main____ INFO      CDS_VERISIUMDEBUG     : '/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/VERISIUMDEBUG_23.03.001'
+2026-02-05 13:53:09.029923 (2891257) main____ INFO      CDS_VMANAGER          : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/VMANAGER'
+2026-02-05 13:53:09.029929 (2891257) main____ INFO      CDS_XCELIUM           : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/XCELIUM'
+2026-02-05 13:53:09.029935 (2891257) main____ INFO      DISPLAY               : ':1.0'
+2026-02-05 13:53:09.029940 (2891257) main____ INFO      JASPER_INSTALL_DIR    : '/mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/JASPER'
+2026-02-05 13:53:09.029946 (2891257) main____ INFO      JASPER_KERNEL_CHECK   : '1'
+2026-02-05 13:53:09.029952 (2891257) main____ INFO      JASPER_MACRO_LINEFILES: '1'
+2026-02-05 13:53:09.029957 (2891257) main____ INFO      JASPER_OS_CHECK       : '0'
+2026-02-05 13:53:09.029963 (2891257) main____ INFO      JG_MACRO_LINEFILES    : '1'
+2026-02-05 13:53:09.029968 (2891257) main____ INFO      LANG                  : 'C'
+2026-02-05 13:53:09.029974 (2891257) main____ INFO      LC_NUMERIC            : 'en_US.UTF-8'
+2026-02-05 13:53:09.029980 (2891257) main____ INFO      TMPDIR                : '/tmp'
+2026-02-05 13:53:09.029984 (2891257) main____ INFO    ----------------------------------------
+2026-02-05 13:53:09.085196 (2891257) lic_core INFO    Initializing license system ...
+2026-02-05 13:53:09.309203 (2891257) lic_core INFO    ... license system initialized.
+2026-02-05 13:53:09.396517 (2891257) lic__man INFO    Claim 'main' for <ui>.
+2026-02-05 13:53:09.397107 (2891257) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2026-02-05 13:53:09.409015 (2891257) lic_core INFO    ... (1) checkout succeeded
+2026-02-05 13:53:09.409125 (2891257) lic__man INFO    Claim 'fpv' for <ui>.
+2026-02-05 13:53:09.409156 (2891257) lic_core INFO    (2) checking out 'jasper_fpv' ...
+2026-02-05 13:53:09.413031 (2891257) lic_core INFO    ... (2) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2026-02-05 13:53:09.413095 (2891257) lic_core INFO    (3) checking out 'jasper_fao' ...
+2026-02-05 13:53:09.423314 (2891257) lic_core INFO    ... (3) checkout succeeded
+2026-02-05 13:53:09.629410 (2891257) main____ INFO    Tool inactivity delay is 480000 ms.
+2026-02-05 13:53:14.384603 (2891257) lic__man INFO    Claim 'fpv' for <ui>.
+2026-02-05 13:53:16.410849 (2891257) lic__man INFO    Unclaim 'fpv' for <ui>.
+2026-02-05 13:53:16.410899 (2891257) lic__man INFO    Claim 'fpv' for <ui>.
+2026-02-05 13:53:16.426869 (2891257) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2026-02-05 13:53:16.429353 (2891257) session_ INFO    Analysis session with session id 'session_0' started (pid: 2891619)
+2026-02-05 13:54:00.620475 (2891257) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:35882)
+2026-02-05 13:54:05.850983 (2891257) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2026-02-05 13:54:05.851571 (2891257) lic__man INFO    Unclaim everything for 'session_0'.
+2026-02-05 13:54:18.694471 (2891257) lic__man INFO    Unclaim everything for 'session_0'.
+2026-02-05 13:57:01.773685 (2891257) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-05 13:57:01.773727 (2891257) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2026-02-05 13:57:09.405829 (2891257) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2026-02-05 14:05:18.922007 (2891257) lic__man INFO    Entering idle state.
+2026-02-05 14:06:15.598668 (2891257) lic__man INFO    Leaving idle state.
+2026-02-05 14:16:01.921599 (2891257) lic__man INFO    Entering idle state.
+2026-02-05 18:12:06.056367 (2891257) lic__man INFO    Leaving idle state.
+2026-02-05 18:12:06.146356 (2891257) main____ INFO    About to exit: requested from GUI
+2026-02-05 18:12:07.807402 (2891257) session_ INFO    Analysis session 'session_0' disconnected.
+2026-02-05 18:12:08.073748 (2891257) lic_core INFO    (1) checkin jasper_interactive
+2026-02-05 18:12:08.074347 (2891257) lic_core INFO    (3) checkin jasper_fao
+2026-02-05 18:12:08.080773 (2891257) main____ INFO    Exiting with status 0.

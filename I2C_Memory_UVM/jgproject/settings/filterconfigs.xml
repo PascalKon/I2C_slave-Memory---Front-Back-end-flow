@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Jasper FilterConfiguration File. Editing the file is not recommended.-->
+<jasperfilterconfig version="1.0">
+    <filterconfigs count="1">
+        <filterconfig name="SPV" id="1">
+            <columns>
+                <column name="Type" id="1" filtertype="action">
+                    <actionfilter>
+                        <action name="Assert" state="0"/>
+                        <action name="Assert(Helper)" state="0"/>
+                        <action name="Assert(c2rtl)" state="0"/>
+                        <action name="Assert(live)" state="0"/>
+                        <action name="Assert(lpv)" state="0"/>
+                        <action name="Assert(sec)" state="0"/>
+                        <action name="Assert(xprop)" state="0"/>
+                        <action name="Assume" state="0"/>
+                        <action name="Assume(cag)" state="0"/>
+                        <action name="Assume(env)" state="0"/>
+                        <action name="Assume(live)" state="0"/>
+                        <action name="Assume(reset)" state="0"/>
+                        <action name="Assume(soft [not] to)" state="0"/>
+                        <action name="Assume(soft)" state="0"/>
+                        <action name="Assume(xprop)" state="0"/>
+                        <action name="Cover" state="0"/>
+                        <action name="Cover(lpv)" state="0"/>
+                        <action name="Cover(path)" state="0"/>
+                        <action name="Cover(sec)" state="0"/>
+                    </actionfilter>
+                </column>
+            </columns>
+        </filterconfig>
+    </filterconfigs>
+    <widgetconfigrelations>
+        <widget name="FPV-PropertyTable" type="PropertyTable"/>
+        <widget name="XPROP-PropertyTable" type="PropertyTable"/>
+        <widget name="CONN-PropertyTable" type="PropertyTable"/>
+        <widget name="CSR-PropertyTable" type="PropertyTable"/>
+        <widget name="SUPERLINT-PropertyTable" type="PropertyTable"/>
+        <widget name="SPV-PropertyTable" type="PropertyTable">
+            <id>1</id>
+        </widget>
+        <widget name="SEC-PropertyTable" type="PropertyTable"/>
+        <widget name="LPV-PropertyTable" type="PropertyTable"/>
+        <widget name="UNR-PropertyTable" type="PropertyTable"/>
+        <widget name="FSV-PropertyTable" type="PropertyTable"/>
+        <widget name="C2RTL-PropertyTable" type="PropertyTable"/>
+    </widgetconfigrelations>
+</jasperfilterconfig>
