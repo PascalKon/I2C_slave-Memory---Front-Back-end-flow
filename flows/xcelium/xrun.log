@@ -1,0 +1,42 @@
+xrun(64): 23.03-s007: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	23.03-s007: Started on Jan 28, 2026 at 14:51:26 EET
+xrun
+	-sv
+	/home/p/paschalk/Desktop/I2C_Memory/component_tbs/I2C_Memory_tb.sv
+	-access +rwc
+	-gui
+	-timescale 1ns/10ps
+	-f /home/p/paschalk/Desktop/I2C_Memory/filelists/rtl.f
+		/home/p/paschalk/Desktop/I2C_Memory/rtl/I2C_Memory.sv
+		/home/p/paschalk/Desktop/I2C_Memory/rtl/I2C_Slave.sv
+		/home/p/paschalk/Desktop/I2C_Memory/rtl/Memory.sv
+	-f /home/p/paschalk/Desktop/I2C_Memory/filelists/rtl_tb.f
+		/home/p/paschalk/Desktop/I2C_Memory/component_tbs/I2C_Memory_tb.sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_top_i2c_memory.dut.i2c_inst.A_0 tb_top_i2c_memory.dut.i2c_inst.A_1 tb_top_i2c_memory.dut.i2c_inst.A_2 tb_top_i2c_memory.dut.i2c_inst.Data_in tb_top_i2c_memory.dut.i2c_inst.Data_out tb_top_i2c_memory.dut.i2c_inst.MY_ADDR tb_top_i2c_memory.dut.i2c_inst.Reg_addr tb_top_i2c_memory.dut.i2c_inst.Reg_read tb_top_i2c_memory.dut.i2c_inst.Reg_write tb_top_i2c_memory.dut.i2c_inst.SCL tb_top_i2c_memory.dut.i2c_inst.SDA tb_top_i2c_memory.dut.i2c_inst.bit_cnt tb_top_i2c_memory.dut.i2c_inst.clk tb_top_i2c_memory.dut.i2c_inst.clk_cnt tb_top_i2c_memory.dut.i2c_inst.next_state tb_top_i2c_memory.dut.i2c_inst.read_only_reg tb_top_i2c_memory.dut.i2c_inst.rst_n tb_top_i2c_memory.dut.i2c_inst.rw_bit tb_top_i2c_memory.dut.i2c_inst.scl_falling tb_top_i2c_memory.dut.i2c_inst.scl_rising tb_top_i2c_memory.dut.i2c_inst.scl_sync tb_top_i2c_memory.dut.i2c_inst.sda_en tb_top_i2c_memory.dut.i2c_inst.sda_in tb_top_i2c_memory.dut.i2c_inst.sda_out tb_top_i2c_memory.dut.i2c_inst.sda_sync tb_top_i2c_memory.dut.i2c_inst.shift_reg tb_top_i2c_memory.dut.i2c_inst.start_cond tb_top_i2c_memory.dut.i2c_inst.state tb_top_i2c_memory.dut.i2c_inst.stop_cond tb_top_i2c_memory.dut.mem_inst.ADC_in tb_top_i2c_memory.dut.mem_inst.Amp_EN tb_top_i2c_memory.dut.mem_inst.CP_reset tb_top_i2c_memory.dut.mem_inst.CS_control tb_top_i2c_memory.dut.mem_inst.DAC_out tb_top_i2c_memory.dut.mem_inst.Data_in tb_top_i2c_memory.dut.mem_inst.Data_out tb_top_i2c_memory.dut.mem_inst.Reg_addr tb_top_i2c_memory.dut.mem_inst.Reg_read tb_top_i2c_memory.dut.mem_inst.Reg_write tb_top_i2c_memory.dut.mem_inst.Timer_EN tb_top_i2c_memory.dut.mem_inst.Timer_FEN tb_top_i2c_memory.dut.mem_inst.clk tb_top_i2c_memory.dut.mem_inst.registers tb_top_i2c_memory.dut.mem_inst.registers_en tb_top_i2c_memory.dut.mem_inst.rst_n tb_top_i2c_memory.dut.mem_inst.rw_en
+Created probe 1
+xcelium> reset
+Loaded snapshot worklib.tb_top_i2c_memory:sv
+xcelium> reset
+Loaded snapshot worklib.tb_top_i2c_memory:sv
+xcelium> run
+------------------------------------------------
+READ-BACK value = 0xff
+Reg_write asserted? 0
+Data_out seen by Memory = 0x00
+TEST FAIL ✘
+------------------------------------------------
+Simulation complete via $finish(1) at time 1782200 NS + 0
+/home/p/paschalk/Desktop/I2C_Memory/component_tbs/I2C_Memory_tb.sv:238         #1000 $finish;
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	23.03-s007: Exiting on Jan 28, 2026 at 15:07:02 EET  (total: 00:15:36)
