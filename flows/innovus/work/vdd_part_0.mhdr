@@ -1,0 +1,56 @@
+* The organization, structure, and layout of this file are copyrights and
+* confidential and proprietary trade secrets of Cadence Design Systems, Inc.,
+* subject to the terms and conditions of the license agreement in effect
+* between you and Cadence Design Systems, Inc. This file and its information
+* may not be disclosed, sold, or otherwise transferred to any third party
+* without the express written consent of Cadence Design Systems, Inc. Export
+* of any or all of this file in violation of any statute or regulation is
+* strictly prohibited.
+* 
+
+FORMAT: 11.0
+PROJECT: none
+NET: vdd 
+CREATOR: QX
+
+CREATED: 2026-Feb-17 14:49:48 (2026-Feb-17 12:49:48 GMT)
+
+LAYOUT_XMIN: -10
+LAYOUT_YMIN: -10
+LAYOUT_XMAX: 343850
+LAYOUT_YMAX: 310890
+
+NODES: 8462
+NODE_FILE: vdd_part_0.mnode
+RESISTORS: 8581
+INDUCTORS: 0
+
+LAYERS: 11
+LAYER: METTPL M 433 vdd_part_0.ml00
+LAYER: VIATPL V 496 vdd_part_0.ml01
+LAYER: METTP M 390 vdd_part_0.ml02
+LAYER: VIATP V 657 vdd_part_0.ml03
+LAYER: MET4 M 555 vdd_part_0.ml04
+LAYER: VIA3 V 559 vdd_part_0.ml05
+LAYER: MET3 M 397 vdd_part_0.ml06
+LAYER: VIA2 V 555 vdd_part_0.ml07
+LAYER: MET2 M 427 vdd_part_0.ml08
+LAYER: VIA1 V 1079 vdd_part_0.ml09
+LAYER: MET1 M 3033 vdd_part_0.ml10
+
+CUT_LAYER: none
+GRID_CAP: false
+DIFF_CAP: false
+NUM_PINS: 0
+PINS: vdd_part_0.bmpin
+NUM_INSTANCE_TAPS: 1882
+INSTANCES: vdd_part_0.bminst
+I_LOADS:
+NODE_MAP:
+RESISTOR_MAP:
+TILE_FILE: vdd_part_0.mtile
+OUTPUT_WLT: drawn
+LAYOUT_SCALE_FACTOR: 1
+TEMPERATURE: 25
+BINARY_INST: true
+MICRON_UNITS: 1000

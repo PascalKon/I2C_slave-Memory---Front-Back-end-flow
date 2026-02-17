@@ -1,0 +1,16 @@
+designName: I2CAndMemory 
+numXParts: 1 
+numYParts: 1 
+minX: 0 
+minY: 0 
+maxX: 3438400 
+maxY: 3124800 
+dbUnit: 10000 
+maxDEFUnit: 1000 
+HALO: 16 
+totalNumCells: 1882 
+totalNumIgnoredCells: 0 
+hasCellInstNameIDMap: 1 
+globalDelimiter: / 
+defInstDataFile: defInstData 
+version: 1.1
