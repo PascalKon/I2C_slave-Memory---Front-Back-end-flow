@@ -1,0 +1,41 @@
+IMC(64): 23.03-s004: (c) Copyright 1995-2023 Cadence Design Systems Inc - Simulator version: 23.03-s007 - Coverage engine version: 23.03-s007
+imc: *I,RUNLD: Successfully loaded run cov_work/scope/final.
+imc: *W,vrefine.vrefine_bad_rules_checksum_for_cmd: Some rules of refinement file '/home/p/paschalk/Desktop/I2C_Memory/I2C_Memory_UVM/refine.vRefine' might be invalid. This could be because of the changes in source code of some of the instances or types, or due to changes in CCF commands across models.
+List of instances/types whose rules seem to be invalid:
+I2C_Slave( block )
+top.dut.i2c_inst( block )
+ 
+
+See the log file for a list of entities on which the rules could not be applied.
+Note: All valid refinement rules were applied automatically. You can apply all the rules from this refinement file using -apply_all flag, however, it might cause incorrect markings.
+imc: *W,vrefine.vrefine_bad_rules_checksum_detail: 
+Instances/Types on which rules that are suspected as invalid due to changes in source code or due to changes in CCF commands across models were detected :
+
+I2C_Slave( block )
+	Suspected blocks:
+	Error type: ORPHAN(Reason: UNKNOWN)	Entity: I2C_Slave/76	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/I2C_Slave.sv	Line: 300	Text: default: begin
+
+
+top.dut.i2c_inst( block )
+	Suspected blocks:
+	Error type: ORPHAN(Reason: UNKNOWN)	Entity: top/dut/i2c_inst/76	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/I2C_Slave.sv	Line: 300	Text: default: begin
+
+
+
+Adding exclude covered to toggle 'top/i2c_vif_slave/uvc_sda'
+Adding exclude covered to toggle 'top/i2c_vif_slave/uvc_scl'
+Adding exclude covered to toggle 'top/i2c_vif_master/uvc_sda'
+Adding exclude covered to toggle 'top/i2c_vif_master/uvc_scl'
+Adding exclude covered to toggle 'top/dut/i2c_inst/sda_out'
+Adding exclude covered to toggle 'top/dut/i2c_inst/MY_ADDR'
+Adding exclude covered to block 'top/11'
+Adding exclude covered to block 'top/11'
+Adding exclude covered to toggle 'I2C_Slave/sda_out'
+Adding exclude covered to toggle 'I2C_Slave/MY_ADDR'
+Adding exclude covered to toggle 'i2c_if/uvc_sda'
+Adding exclude covered to toggle 'i2c_if/uvc_scl'
+Starting gui mode
+Adding recursive exclude covered to block 'top/dut/i2c_inst/76'
+Adding recursive exclude covered to block 'I2C_Slave/76'
+imc: *W,CNTEXCWCR: Adding exclude rule to an already excluded block top/dut/i2c_inst/76, Exclusion comment:  [paschalk]: 'default state of I2C_Slave.sv, ff block for FSM current state and input/output logic'. it may not changed its grade. Make sure that the correct entity name is specified for excluding. Origin refinement file was '/home/p/paschalk/Desktop/I2C_Memory/I2C_Memory_UVM/refine.vRefine'.
+imc: *W,RELALL: Moving 'all' exclusion information to '/home/p/paschalk/Desktop/I2C_Memory/I2C_Memory_UVM/refine1.vRefine'.

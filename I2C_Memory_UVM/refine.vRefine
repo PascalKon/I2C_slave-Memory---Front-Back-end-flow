@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<refinement-file-root>
+  <information comment-version="2" creation-time="Sun 02 Nov 2025 18:01:12 EET" creator="paschalk" csCheck="true" save-ref-method="seq" tool-version="Cadence Verisium Manager23.03" rules-signature-c="9cc6e5c040870de26afcea5b825c0f3">
+    <ucm-files>
+      <ucm-file domain="icc" modelCheckSum="909035493" path="cov_work/scope/final/icc_362ec7e5_12ee1c65.ucm"></ucm-file>
+    </ucm-files>
+    <ccf-files></ccf-files>
+  </information>
+  <rules>
+    <rule ccType="inst" comment="0" domain="icc" entityName="top/i2c_vif_slave/uvc_sda" entityType="toggle" excTime="1762098292" name="exclude_covered" reviewer="2" user="1" vscope="default"></rule>
+    <rule ccType="inst" comment="3" domain="icc" entityName="top/i2c_vif_slave/uvc_scl" entityType="toggle" excTime="1762098317" name="exclude_covered" reviewer="2" user="1" vscope="default"></rule>
+    <rule ccType="inst" comment="4" domain="icc" entityName="top/i2c_vif_master/uvc_sda" entityType="toggle" excTime="1762098588" name="exclude_covered" reviewer="2" user="1" vscope="default"></rule>
+    <rule ccType="inst" comment="5" domain="icc" entityName="top/i2c_vif_master/uvc_scl" entityType="toggle" excTime="1762098616" name="exclude_covered" reviewer="2" user="1" vscope="default"></rule>
+    <rule ccType="inst" ccfFlagsMask="35184372089280-42" comment="7" domain="icc" entityName="top/dut/i2c_inst/76" entityType="block" excTime="1762098706" file="6" im-checksum="227256918" line="300" name="exclude_covered" reviewer="2" text="default: begin" user="1" vscope="default"></rule>
+    <rule ccType="inst" comment="8" domain="icc" entityName="top/dut/i2c_inst/sda_out" entityType="toggle" excTime="1762098755" name="exclude_covered" reviewer="2" user="1" vscope="default"></rule>
+    <rule ccType="inst" comment="9" domain="icc" entityName="top/dut/i2c_inst/MY_ADDR" entityType="toggle" excTime="1762098780" name="exclude_covered" reviewer="2" user="1" vscope="default"></rule>
+    <rule ccType="inst" ccfFlagsMask="35184372089280-42" comment="11" domain="icc" entityName="top/11" entityType="block" excTime="1762098850" file="10" im-checksum="1509550322" line="114" name="exclude_covered" reviewer="2" text="$warning(&quot;DUMPNAME not specified&quot;);" user="1" vscope="default"></rule>
+    <rule ccType="type" ccfFlagsMask="35184372089280-42" comment="11" domain="icc" entityName="top/11" entityType="block" excTime="1762098905" file="10" im-checksum="1509550322" line="114" name="exclude_covered" packageName="worklib" reviewer="2" text="$warning(&quot;DUMPNAME not specified&quot;);" user="1" vscope="default"></rule>
+    <rule ccType="type" ccfFlagsMask="35184372089280-42" comment="12" domain="icc" entityName="I2C_Slave/76" entityType="block" excTime="1762098955" file="6" im-checksum="227256918" line="300" name="exclude_covered" packageName="worklib" reviewer="2" text="default: begin" user="1" vscope="default"></rule>
+    <rule ccType="type" comment="13" domain="icc" entityName="I2C_Slave/sda_out" entityType="toggle" excTime="1762098998" name="exclude_covered" packageName="worklib" reviewer="2" user="1" vscope="default"></rule>
+    <rule ccType="type" comment="9" domain="icc" entityName="I2C_Slave/MY_ADDR" entityType="toggle" excTime="1762099023" name="exclude_covered" packageName="worklib" reviewer="2" user="1" vscope="default"></rule>
+    <rule ccType="type" comment="14" domain="icc" entityName="i2c_if/uvc_sda" entityType="toggle" excTime="1762099113" name="exclude_covered" packageName="worklib" reviewer="2" user="1" vscope="default"></rule>
+    <rule ccType="type" comment="15" domain="icc" entityName="i2c_if/uvc_scl" entityType="toggle" excTime="1762099129" name="exclude_covered" packageName="worklib" reviewer="2" user="1" vscope="default"></rule>
+  </rules>
+  <cache-map>
+    <cache-entry key="0" value="i2c_vif_slave is passive it doesn't drive unv_sda signal. Only monitors"></cache-entry>
+    <cache-entry key="1" value="paschalk"></cache-entry>
+    <cache-entry key="2" value="Paschalis_Konstantinidis"></cache-entry>
+    <cache-entry key="3" value="i2c_vif_slave is passive it doesn't drive unv_scl signal. Only monitors"></cache-entry>
+    <cache-entry key="4" value="i2c_vif_master drives unv_sda to &quot;0&quot; or &quot;z&quot; only."></cache-entry>
+    <cache-entry key="5" value="i2c_vif_master drives unv_scl to &quot;0&quot; or &quot;z&quot; only."></cache-entry>
+    <cache-entry key="6" value="/home/p/paschalk/Desktop/I2C_Memory_UVM/src/I2C_Slave.sv"></cache-entry>
+    <cache-entry key="7" value="default state of I2C_Slave.sv, ff block for FSM current state and input/output logic "></cache-entry>
+    <cache-entry key="8" value="Sda_out signal of I2C_Slave.sv can only be 0 or Z(hi imp) "></cache-entry>
+    <cache-entry key="9" value="MY_ADDR signal of I2C_Slave.sv can only have its last 3 LSB change.Although all of the 7 bits are necessary for our Slave i2c Address"></cache-entry>
+    <cache-entry key="10" value="/home/p/paschalk/Desktop/I2C_Memory_UVM/src/top.sv"></cache-entry>
+    <cache-entry key="11" value="Debugging warning"></cache-entry>
+    <cache-entry key="12" value="default state of I2C_Slave.sv, ff block for FSM current state and input/output logic"></cache-entry>
+    <cache-entry key="13" value="Sda_out signal of I2C_Slave.sv can only be 0 or Z(hihi imp)"></cache-entry>
+    <cache-entry key="14" value="Interface's uvc_sda goes only &quot;0&quot; or &quot;z&quot;"></cache-entry>
+    <cache-entry key="15" value="Interface's uvc_scl goes only &quot;0&quot; or &quot;z&quot;"></cache-entry>
+  </cache-map>
+</refinement-file-root>

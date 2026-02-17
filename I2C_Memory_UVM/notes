@@ -1,0 +1,34 @@
+report_metrics  -detail \
+    -out report/test_final_html \
+    -type <i2c_env_pkg.i2c_coverage::i2c_reg_access_cg I2CAndMemory I2C_Slave Memory register_file assertions> \
+    -metrics block:expression:toggle:covergroup:assertion:functional \
+    -overwrite -both -exclComments -kind expand -aspect both -assertionStatus
+    -metrics block:expression:toggle:covergroup:assertion:functional 
+#### github    
+    load ./cov_work/scope/final
+load -refinement refine(final).vRefine
+exec mkdir -p report
+report -html -out report/test_final.html -detail -inst dut -metrics functional -all -aspect both -assertionStatus -allAssertionCounters -type *
+
+
+
+##### vagos 
+# ------------------------------------------------------------------------- # 
+module load cadence
+# ------------------------------------------------------------------------- # 
+imc -batch
+# ------------------------------------------------------------------------- # 
+load ./cov_work/scope/final
+# ------------------------------------------------------------------------- # 
+load -refinement refine(final).vRefine
+# ------------------------------------------------------------------------- # 
+report -html -detail -out test_final.html -inst dut -metrics block:expression:toggle:covergroup -exclComments
+
+
+##### single run test original
+xrun -gui -f run.args  -l i2c_testing_test.log  +UVM_TESTNAME=i2c_testing_test  +DUMPNAME="i2c_testing_test.vcd"  +VERBOSITY=UVM_LOW
+
+
+####help for imc
+
+imc -execcmd "<command_name> help"

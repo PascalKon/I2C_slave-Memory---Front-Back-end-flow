@@ -1,0 +1,246 @@
+csi-xmsim - CSI: Command line:
+xmsim
+    -f /home/p/paschalk/Desktop/I2C_Memory_UVM/xcelium.d/run.lnx8664.22.03.d/cn92.it.auth.gr_58750/xmsim.args
+        -INPUT @source /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/XCELIUM/tools/methodology/UVM/CDNS-1.2/additions/sv/files/tcl/uvm_sim.tcl
+        +VERBOSITY=UVM_LOW
+        +asssertreport
+        +assertmonitor
+        +assertcount
+        +VERBOSITY=UVM_NONE
+        +DUMPNAME=Single_Test_Xrun_Results/i2c_simple_test/i2c_simple_test.vcd
+        -uvmhome /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/XCELIUM/tools/methodology/UVM/CDNS-1.2
+        -sv_lib /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/XCELIUM/tools/methodology/UVM/CDNS-1.2/additions/sv/lib/64bit/libuvmpli.so
+        -gui
+        -COVOVERWRITE
+        +UVM_TESTNAME=i2c_simple_test
+        -COVTEST i2c_simple_test
+        -MESSAGES
+        -svseed 1
+        -sndynseed 1
+        -SV_LIB /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/XCELIUM/tools/methodology/UVM/CDNS-1.2/additions/sv/lib/64bit/libuvmdpi.so
+        +EMGRLOG Single_Test_Xrun_Results/i2c_simple_test/i2c_simple_test.log
+        -XLSTIME 1762117580
+        -XLKEEP
+        -XLMODE ./xcelium.d/run.lnx8664.22.03.d
+        -RUNMODE
+        -CDSLIB ./xcelium.d/run.lnx8664.22.03.d/cds.lib
+        -HDLVAR ./xcelium.d/run.lnx8664.22.03.d/hdl.var
+        -XLNAME xrun
+        -XLVERSION TOOL:	xrun(64)	22.03-s005
+        -XLNAME ./xcelium.d/run.lnx8664.22.03.d/cn92.it.auth.gr_58750
+    -CHECK_VERSION TOOL:	xrun(64)	22.03-s005
+    -LOG_FD 5
+    -LOG_FD_NAME Single_Test_Xrun_Results/i2c_simple_test/i2c_simple_test.log
+    -cmdnopsim
+    -runlock /home/p/paschalk/Desktop/I2C_Memory_UVM/xcelium.d/run.lnx8664.22.03.d/.xmlib.lock
+    -runscratch /home/p/paschalk/Desktop/I2C_Memory_UVM/xcelium.d/run.lnx8664.22.03.d/cn92.it.auth.gr_58750
+
+csi-xmsim - CSI: *F,INTERR: INTERNAL EXCEPTION
+Observed simulation time : 27570 US + 39
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim(64)	22.03-s005
+  HOSTNAME: cn92.it.auth.gr
+  OPERATING SYSTEM: Linux 5.14.0-570.52.1.el9_6.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Oct 15 13:59:22 UTC 2025 x86_64
+  MESSAGE: sv_seghandler - trapno -1 addr(0x30)
+-----------------------------------------------------------------
+
+csi-xmsim - CSI: Cadence Support Investigation, recording details
+External Code in function: <unavailable> offset -65508
+External Code in function: <unavailable> offset -65536
+Verilog Syntax Tree: package declaration (VST_D_PACKAGE) in verilog_package worklib.i2c_env_pkg:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/env/i2c_env_pkg.sv, line 8, position 18
+	Scope: i2c_env_pkg
+	Decompile: i2c_env_pkg
+	Source  : package i2c_env_pkg;
+	Position:                   ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.top:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/top.sv, line 10, position 9
+	Scope: top
+	Decompile: top#(CLK_CYCLE,delay_reset)
+	Source  : module top;
+	Position:          ^
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module worklib.top:sv (SIG) <0x4ae100ec>
+	Decompile: i2c_env_pkg
+Verilog Syntax Tree: initial statement declaration (VST_D_INITIAL_STMT) in module worklib.top:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/top.sv, line 112, position 8
+	Scope: top
+	Source  :   initial begin
+	Position:         ^
+Verilog Syntax Tree: tri1 declaration (VST_D_TRI1) in module worklib.top:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/top.sv, line 16, position 9
+	Scope: top
+	Decompile: logic sda
+	Source  :   tri1 sda;
+	Position:          ^
+Intermediate File: data block (IF_BLK) in snapshot worklib.top:sv (SSS)
+Simulator Snap Shot: tog reg cov (SSS_COV_TOG_REG) in snapshot worklib.top:sv (SSS)
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module worklib.top:sv (VST)
+	Decompile: logic
+Verilog Syntax Tree: initial statement declaration (VST_D_INITIAL_STMT) in module worklib.top:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/top.sv, line 108, position 8
+	Scope: top
+	Source  :   initial begin
+	Position:         ^
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module worklib.top:sv (SIG) <0x4ae100ec>
+	Decompile: top#(CLK_CYCLE,delay_reset)
+Simulator Snap Shot: pdi1 (SSS_PDI1) in snapshot worklib.top:sv (SSS)
+Simulator Snap Shot: gd (SSS_GD) in snapshot worklib.top:sv (SSS)
+Verilog Syntax Tree: sequential block statement (VST_S_SEQ_BLOCK) in module worklib.Memory:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/Memory.sv, line 127, position 49
+	Scope: Memory.unmblk9
+	Source  :                 for (int i = 0; i < 37; i++) begin                               // if we have NO read or write let registers be updated from other sources
+	Position:                                                  ^
+Verilog Syntax Tree: nonblocking assignment statement (VST_S_NONBLOCKING_ASSIGNMENT) in module worklib.Memory:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/Memory.sv, line 128, position 37
+	Scope: Memory.unmblk9
+	Decompile: 1'b1
+	Source  :                     registers_en[i] <= 1'b1;  
+	Position:                                      ^
+Verilog Syntax Tree: if statement (VST_S_IF) in module worklib.Memory:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/Memory.sv, line 112, position 21
+	Scope: Memory
+	Decompile: !((Reg_addr >= 3) && (Reg_addr <= 5))
+	Source  :                     if (!(Reg_addr >= 3 && Reg_addr <= 5)) begin    //if Regs are not for ADCs enable Write for register[reg_addr]
+	Position:                      ^
+Verilog Syntax Tree: for statement (VST_S_FOR) in module worklib.Memory:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/Memory.sv, line 121, position 22
+	Scope: Memory.unmblk8
+	Decompile: (i < 37)
+	Source  :                     for (int i = 0; i < 37; i++) begin                               // if we have NO read or write let registers be updated from other sources
+	Position:                       ^
+Verilog Syntax Tree: associative array type (VST_T_AA) in verilog_package worklib.uvm_pkg:sv (VST)
+	Scope: uvm_pkg::uvm_pool
+	Decompile: T assoc array [ KEY ] 
+Verilog Syntax Tree: type parameter (VST_T_TYPE_PARAMETER) in verilog_package worklib.uvm_pkg:sv (VST)
+	Scope: uvm_pkg::uvm_pool
+	Decompile: KEY
+Verilog Syntax Tree: upscope referral (VST_R_UPSCOPE) in verilog_package worklib.uvm_pkg:sv (VST)
+	Scope: uvm_pkg
+	Decompile: bit uvm_severity
+Verilog Syntax Tree: associative array type (VST_T_AA) in verilog_package worklib.uvm_pkg:sv (VST)
+	Scope: uvm_pkg::uvm_report_handler
+	Decompile: uvm_pkg::uvm_pool#() assoc array [ bit ] 
+Verilog Syntax Tree: register declaration (VST_D_REG) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/XCELIUM/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_handler.svh, line 77, position 31
+	Scope: uvm_pkg::uvm_report_handler
+	Decompile: int assoc array [ bit ]  severity_file_handles
+	Source  :   UVM_FILE severity_file_handles[uvm_severity];
+	Position:                                ^
+Verilog Syntax Tree: sequential block statement (VST_S_SEQ_BLOCK) in module worklib.Memory:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/Memory.sv, line 121, position 22
+	Scope: Memory.unmblk8
+	Source  :                     for (int i = 0; i < 37; i++) begin                               // if we have NO read or write let registers be updated from other sources
+	Position:                       ^
+Verilog Syntax Tree: number expression (VST_E_NUMBER) in module worklib.Memory:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/Memory.sv, line 128, position 39
+	Decompile: 1'b1
+	Source  :                     registers_en[i] <= 1'b1;  
+	Position:                                        ^
+Intermediate File: root (IF_ROOT) in module worklib.Memory:sv (VST)
+Verilog Syntax Tree: package declaration (VST_D_PACKAGE) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/XCELIUM/tools/methodology/UVM/CDNS-1.2/sv/src/uvm_pkg.sv, line 28, position 14
+	Scope: uvm_pkg
+	Decompile: uvm_pkg
+	Source  : package uvm_pkg;
+	Position:               ^
+Verilog Syntax Tree: blocking assignment statement (VST_S_BLOCKING_ASSIGNMENT) in module worklib.Memory:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/Memory.sv, line 121, position 46
+	Scope: Memory.unmblk8
+	Decompile: (i + 1)
+	Source  :                     for (int i = 0; i < 37; i++) begin                               // if we have NO read or write let registers be updated from other sources
+	Position:                                               ^
+User Code in function: <unavailable> offset 50340104
+Verilog Syntax Tree: sequential block statement (VST_S_SEQ_BLOCK) in module worklib.I2C_Slave:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/I2C_Slave.sv, line 141, position 21
+	Scope: I2C_Slave
+	Source  :         end else begin
+	Position:                      ^
+Intermediate File: root (IF_ROOT) in module worklib.I2C_Slave:sv (VST)
+Verilog Syntax Tree: nonblocking assignment statement (VST_S_NONBLOCKING_ASSIGNMENT) in module worklib.I2C_Slave:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/I2C_Slave.sv, line 146, position 25
+	Scope: I2C_Slave
+	Decompile: Reg_addr
+	Source  :             Reg_addr    <= Reg_addr;
+	Position:                          ^
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module worklib.I2C_Slave:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/I2C_Slave.sv, line 145, position 34
+	Scope: I2C_Slave
+	Decompile: Data_out
+	Source  :             Data_out    <= Data_out; 
+	Position:                                   ^
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module worklib.I2C_Slave:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/I2C_Slave.sv, line 146, position 34
+	Scope: I2C_Slave
+	Decompile: Reg_addr
+	Source  :             Reg_addr    <= Reg_addr;
+	Position:                                   ^
+Verilog Syntax Tree: number expression (VST_E_NUMBER) in module worklib.I2C_Slave:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/I2C_Slave.sv, line 352, position 55
+	Decompile: 0
+	Source  :                 end else if(scl_falling && shift_reg[6:0] != MY_ADDR) begin
+	Position:                                                        ^
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module worklib.register_file_assertions:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/Assertions.sv, line 45, position 66
+	Scope: register_file_assertions
+	Decompile: Reg_addr
+	Source  :         (Reg_read && is_adc_addr(Reg_addr) && registers_en[Reg_addr] ) 
+	Position:                                                                   ^
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module worklib.register_file_assertions:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/Assertions.sv, line 46, position 38
+	Scope: register_file_assertions
+	Decompile: Reg_addr
+	Source  :         |-> ##1 (!registers_en[Reg_addr]) ##1 (registers_en[Reg_addr]); 
+	Position:                                       ^
+Simulator Snap Shot: root (SSS_ROOT) in snapshot worklib.top:sv (SSS)
+Intermediate File: array of pointers (IF_PTRBLK) in snapshot worklib.top:sv (SSS)
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module worklib.register_file_assertions:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/Assertions.sv, line 34, position 81
+	Scope: register_file_assertions
+	Decompile: Reg_addr
+	Source  :         (Reg_read && !Reg_write && is_adc_addr(Reg_addr) && !registers_en[Reg_addr]) |-> ##1 
+	Position:                                                                                  ^
+Verilog Syntax Tree: package declaration (VST_D_PACKAGE) in verilog_package worklib.i2c_pkg:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/agents/i2c_pkg.sv, line 7, position 14
+	Scope: i2c_pkg
+	Decompile: i2c_pkg
+	Source  : package i2c_pkg;
+	Position:               ^
+Simulator Snap Shot: top level instance (SSS_TLI) in snapshot worklib.top:sv (SSS)
+Verilog Syntax Tree: class declaration (VST_D_CLASS) in verilog_package worklib.uvm_pkg:sv (VST)
+	File: /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/XCELIUM/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh, line 71, position 13
+	Scope: uvm_pkg::uvm_root
+	Decompile: uvm_pkg::uvm_root
+	Source  : class uvm_root extends uvm_component;
+	Position:              ^
+Verilog Syntax Tree: package declaration (VST_D_PACKAGE) in verilog_package worklib.cdns_uvm_pkg:sv (VST)
+	File: /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/XCELIUM/tools/methodology/UVM/CDNS-1.2/additions/sv/cdns_uvm_pkg.sv, line 28, position 19
+	Scope: cdns_uvm_pkg
+	Decompile: cdns_uvm_pkg
+	Source  : package cdns_uvm_pkg;
+	Position:                    ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.I2CAndMemory:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/I2C_Memory.sv, line 4, position 18
+	Scope: I2CAndMemory
+	Decompile: I2CAndMemory
+	Source  : module I2CAndMemory
+	Position:                   ^
+Intermediate File: string (IF_STRING) in module worklib.top:sv (VST)
+	Decompile: dut
+Verilog Syntax Tree: instance declaration (VST_D_INSTANCE) in module worklib.top:sv (VST)
+	File: /home/p/paschalk/Desktop/I2C_Memory_UVM/src/top.sv, line 44, position 17
+	Scope: top
+	Decompile: dut
+	Source  :   I2CAndMemory dut (
+	Position:                  ^
+Error: Error processing stack frame(15) - skipping rest of frame!
+Error: Error processing stack frame(16) - skipping rest of frame!
+Internal Code in function: nmpIsLegalLibraryUnix offset 64
+External Code in function: <unavailable> offset -65533
+Intermediate File: string (IF_STRING) in verilog_package worklib.uvm_pkg:sv (VST)
+	Decompile: uvm_pkg
+User Code in function: <unavailable> offset 38196322
+csi-xmsim - CSI: investigation complete took 0.085 secs, send this file to Cadence Support

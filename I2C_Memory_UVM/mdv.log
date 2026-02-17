@@ -1,0 +1,274 @@
+[INFO ] 2025-10-23 18:25:25 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36943
+[ERROR] 2025-10-23 18:25:26 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Valid model file not found for run directory cov_work/scope/. Specify a valid run directory with correct ucm, ucd files and rerun the command.
+[INFO ] 2025-10-23 18:25:57 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41347
+[ERROR] 2025-10-23 18:25:58 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Valid model file not found for run directory cov_work/scope/test_sv1. Specify a valid run directory with correct ucm, ucd files and rerun the command.
+[INFO ] 2025-10-23 18:54:18 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35199
+[INFO ] 2025-10-23 19:04:26 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 32933
+[INFO ] 2025-10-23 19:09:56 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40255
+[INFO ] 2025-10-23 19:42:21 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33197
+[INFO ] 2025-10-24 08:01:46 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34091
+[INFO ] 2025-10-24 08:10:28 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43145
+[INFO ] 2025-10-24 08:18:54 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39413
+[INFO ] 2025-10-24 08:21:56 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37961
+[INFO ] 2025-10-24 08:27:29 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46535
+[INFO ] 2025-10-24 09:20:46 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42179
+[INFO ] 2025-10-24 09:22:22 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45803
+[INFO ] 2025-10-25 10:50:18 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44455
+[INFO ] 2025-10-25 10:57:19 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46251
+[INFO ] 2025-10-25 11:05:41 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37609
+[INFO ] 2025-10-25 12:23:37 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36439
+[INFO ] 2025-10-25 15:45:11 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38975
+[INFO ] 2025-10-25 15:50:58 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45943
+[INFO ] 2025-10-25 15:54:59 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42599
+[INFO ] 2025-10-25 15:59:44 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43973
+[INFO ] 2025-10-25 16:27:46 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39657
+[INFO ] 2025-10-25 16:34:57 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39881
+[INFO ] 2025-10-26 12:41:34 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38195
+[INFO ] 2025-10-28 15:40:55 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34865
+[INFO ] 2025-10-29 16:55:09 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40381
+[INFO ] 2025-10-31 20:10:09 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37001
+[ERROR] 2025-10-31 20:11:19 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - invalid command name "imc".
+[INFO ] 2025-10-31 20:16:23 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36309
+[INFO ] 2025-10-31 20:53:11 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37039
+[ERROR] 2025-11-01 15:43:22 [com.cadence.mdv.cli.app.MDVCLIApp] [CLI Engine Input Reader] - Error during batch mode launch
+java.io.IOException: Input/output error
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(Unknown Source)
+	at jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:169)
+	at jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:137)
+	at jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:246)
+	at jline.internal.InputStreamReader.read(InputStreamReader.java:261)
+	at jline.internal.InputStreamReader.read(InputStreamReader.java:198)
+	at jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2145)
+	at jline.console.ConsoleReader.readLine(ConsoleReader.java:2349)
+	at jline.console.ConsoleReader.readLine(ConsoleReader.java:2269)
+	at com.cadence.mdv.cli.app.MDVCLIApp$ConsoleCLIReader.readLine(MDVCLIApp.java:54)
+	at com.cadence.mdv.cli.app.MDVCLIApp$1.run(MDVCLIApp.java:222)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[INFO ] 2025-11-01 15:49:56 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42373
+[INFO ] 2025-11-01 15:52:46 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41011
+[INFO ] 2025-11-01 15:53:36 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38637
+[INFO ] 2025-11-01 15:55:31 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 32945
+[ERROR] 2025-11-01 15:55:52 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - 0utput directory test_final.html already exists, and will not be overwritten. Use the '-overwrite' option to overwrite the existing directory, or specify a different directory name with the -out option, and rerun the command.
+[ERROR] 2025-11-01 15:58:04 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - Cannot create directory test_final.html/report_sub_dir. Make sure that the parent directory has write permission, and rerun the command
+[ERROR] 2025-11-01 15:58:32 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - Cannot create directory test_final.html/report_sub_dir. Make sure that the parent directory has write permission, and rerun the command
+[ERROR] 2025-11-01 15:58:52 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - Cannot create directory test_final.html/report_sub_dir. Make sure that the parent directory has write permission, and rerun the command
+[INFO ] 2025-11-01 15:59:07 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35859
+[INFO ] 2025-11-01 16:51:46 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35273
+[ERROR] 2025-11-01 16:54:02 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - bad option "-hier": should be -metrics, -out, -covered|-uncovered|-excludes|-unr|-all|-both, -exclComments, -append, -showempty, -source, -assertionStatus, -allAssertionCounters, -aspect, -cumulative, -local, -grading, -cross, -kind,, -inst|-type,, -cubeExpand, or entitynames.
+[ERROR] 2025-11-01 16:56:05 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - missing value for "-cumulative" option.
+[ERROR] 2025-11-01 16:57:06 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - Cannot create directory test_final.html/report_sub_dir. Make sure that the parent directory has write permission, and rerun the command
+[ERROR] 2025-11-01 16:57:35 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - Cannot create directory test_final.html/report_sub_dir. Make sure that the parent directory has write permission, and rerun the command
+[ERROR] 2025-11-01 16:57:59 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - Cannot create directory test_final.html/report_sub_dir. Make sure that the parent directory has write permission, and rerun the command
+[ERROR] 2025-11-01 16:58:11 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - Cannot create directory test_final.html/report_sub_dir. Make sure that the parent directory has write permission, and rerun the command
+[ERROR] 2025-11-01 16:58:16 [com.cadence.mdv.cli.app.MDVCLIApp] [CLI Engine Input Reader] - Error during batch mode launch
+java.io.IOException: Input/output error
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(Unknown Source)
+	at jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:169)
+	at jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:137)
+	at jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:246)
+	at jline.internal.InputStreamReader.read(InputStreamReader.java:261)
+	at jline.internal.InputStreamReader.read(InputStreamReader.java:198)
+	at jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2145)
+	at jline.console.ConsoleReader.readLine(ConsoleReader.java:2349)
+	at jline.console.ConsoleReader.readLine(ConsoleReader.java:2269)
+	at com.cadence.mdv.cli.app.MDVCLIApp$ConsoleCLIReader.readLine(MDVCLIApp.java:54)
+	at com.cadence.mdv.cli.app.MDVCLIApp$1.run(MDVCLIApp.java:222)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[INFO ] 2025-11-01 16:59:57 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 32871
+[ERROR] 2025-11-01 17:01:17 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Cannot create directory test_final.html/report_sub_dir. Make sure that the parent directory has write permission, and rerun the command
+[INFO ] 2025-11-01 17:13:00 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42627
+[INFO ] 2025-11-01 17:16:44 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45959
+[ERROR] 2025-11-01 17:16:44 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - repeated -inst|-type "-type": should be -exclComments, -append, -showempty, -source, -cumulative, -local, -grading, -cross, -kind,,, -cubeExpand, or entitynames.
+[INFO ] 2025-11-01 17:18:15 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45759
+[INFO ] 2025-11-01 17:47:50 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34373
+[INFO ] 2025-11-02 01:08:05 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40809
+[ERROR] 2025-11-02 01:08:05 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - repeated -inst|-type "-type": should be -exclComments, -append, -showempty, -source, -cumulative, -local, -grading, -cross, -kind,,, -cubeExpand, or entitynames.
+[INFO ] 2025-11-02 01:08:59 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42583
+[ERROR] 2025-11-02 01:09:00 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - invalid command name "-inst".
+[ERROR] 2025-11-02 01:09:00 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "-metrics".
+[INFO ] 2025-11-02 01:11:03 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36973
+[ERROR] 2025-11-02 01:11:04 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - bad option "-": should be -covered|-uncovered|-excludes|-unr|-all|-both, -exclComments, -append, -showempty, -source, -assertionStatus, -allAssertionCounters, -aspect, -cumulative, -local, -grading, -cross, -kind,, -inst|-type,, -cubeExpand, or entitynames.
+[INFO ] 2025-11-02 01:11:31 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 32779
+[INFO ] 2025-11-02 01:13:00 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40887
+[INFO ] 2025-11-02 01:21:01 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36833
+[INFO ] 2025-11-02 01:22:35 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46243
+[INFO ] 2025-11-02 01:33:12 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45287
+[INFO ] 2025-11-02 01:34:57 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37683
+[INFO ] 2025-11-02 01:43:47 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35043
+[ERROR] 2025-11-02 01:43:48 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - repeated -inst|-type "-type": should be -metrics, -covered|-uncovered|-excludes|-unr|-all|-both, -exclComments, -append, -showempty, -source, -assertionStatus, -allAssertionCounters, -aspect, -cumulative, -local, -grading, -cross, -kind,,, -cubeExpand, or entitynames.
+[INFO ] 2025-11-02 01:45:24 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44089
+[INFO ] 2025-11-02 01:50:48 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46605
+[ERROR] 2025-11-02 01:50:48 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Incorrect command parameters. Unknown option 'html'
+[INFO ] 2025-11-02 01:52:53 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37761
+[INFO ] 2025-11-02 01:55:14 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41861
+[ERROR] 2025-11-02 01:55:15 [com.cadence.mdv.cli.engine.CLIEnvironment] [BLNativeThread-1] - command reportMetricsIMC failed
+
+com.cadence.mdv.exceptions.MDVException: mix of inst & type
+	at com.cadence.mdv.cli.commands.ReportMetricsCmd.parsePaths(ReportMetricsCmd.java:144)
+	at com.cadence.mdv.cli.commands.ReportMetricsIMCCmd.internalInvoke(ReportMetricsIMCCmd.java:80)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:152)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:157)
+	at com.cadence.mdv.cli.engine.CLIEnvironment.runJavaCmd(CLIEnvironment.java:235)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative.runCommandNative(Native Method)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative$87.callInternal(BLNative.java:1927)
+	at com.cadence.mdv.util.CallableWithSource.call(CallableWithSource.java:25)
+	at com.cadence.mdv.central.tools.SystemInterThreadCommXRegistry.lambda$wrap$1(SystemInterThreadCommXRegistry.java:61)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[ERROR] 2025-11-02 01:55:15 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Mixing types and instances hierarchies is not supported for report_metrics command.
+[ERROR] 2025-11-02 01:55:15 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "-metrics".
+[INFO ] 2025-11-02 01:55:52 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34861
+[ERROR] 2025-11-02 01:55:53 [com.cadence.mdv.cli.engine.CLIEnvironment] [BLNativeThread-1] - command reportMetricsIMC failed
+
+com.cadence.mdv.exceptions.MDVException: mix of inst & type
+	at com.cadence.mdv.cli.commands.ReportMetricsCmd.parsePaths(ReportMetricsCmd.java:144)
+	at com.cadence.mdv.cli.commands.ReportMetricsIMCCmd.internalInvoke(ReportMetricsIMCCmd.java:80)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:152)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:157)
+	at com.cadence.mdv.cli.engine.CLIEnvironment.runJavaCmd(CLIEnvironment.java:235)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative.runCommandNative(Native Method)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative$87.callInternal(BLNative.java:1927)
+	at com.cadence.mdv.util.CallableWithSource.call(CallableWithSource.java:25)
+	at com.cadence.mdv.central.tools.SystemInterThreadCommXRegistry.lambda$wrap$1(SystemInterThreadCommXRegistry.java:61)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[ERROR] 2025-11-02 01:55:53 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Mixing types and instances hierarchies is not supported for report_metrics command.
+[INFO ] 2025-11-02 01:58:39 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45649
+[INFO ] 2025-11-02 02:00:54 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46389
+[INFO ] 2025-11-02 02:01:46 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43833
+[ERROR] 2025-11-02 02:01:47 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - repeated -inst|-type "-type": should be -metrics, -covered|-uncovered|-excludes|-unr|-all|-both, -exclComments, -append, -showempty, -source, -assertionStatus, -allAssertionCounters, -aspect, -cumulative, -local, -grading, -cross, -kind,,, -cubeExpand, or entitynames.
+[INFO ] 2025-11-02 02:02:02 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40561
+[ERROR] 2025-11-02 02:02:03 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - repeated -inst|-type "-type": should be -metrics, -covered|-uncovered|-excludes|-unr|-all|-both, -exclComments, -append, -showempty, -source, -assertionStatus, -allAssertionCounters, -aspect, -cumulative, -local, -grading, -cross, -kind,,, -cubeExpand, or entitynames.
+[INFO ] 2025-11-02 12:28:59 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 32843
+[INFO ] 2025-11-02 12:32:38 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40509
+[ERROR] 2025-11-02 12:32:39 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - repeated -inst|-type "-type": should be -metrics, -covered|-uncovered|-excludes|-unr|-all|-both, -exclComments, -append, -showempty, -source, -assertionStatus, -allAssertionCounters, -aspect, -cumulative, -local, -grading, -cross, -kind,,, -cubeExpand, or entitynames.
+[INFO ] 2025-11-02 12:33:04 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36731
+[ERROR] 2025-11-02 12:33:05 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - repeated -inst|-type "-type": should be -metrics, -covered|-uncovered|-excludes|-unr|-all|-both, -exclComments, -append, -showempty, -source, -assertionStatus, -allAssertionCounters, -aspect, -cumulative, -local, -grading, -cross, -kind,,, -cubeExpand, or entitynames.
+[INFO ] 2025-11-02 12:33:28 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39841
+[INFO ] 2025-11-02 12:33:54 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40989
+[INFO ] 2025-11-02 12:34:24 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43871
+[ERROR] 2025-11-02 12:34:25 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Cannot read directory 'cov_work/scope/final[A'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2025-11-02 12:34:25 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Valid model file not found for run directory cov_work/scope/final[A. Specify a valid run directory with correct ucm, ucd files and rerun the command.
+[INFO ] 2025-11-02 12:34:49 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43627
+[INFO ] 2025-11-02 12:36:21 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34273
+[ERROR] 2025-11-02 12:36:21 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "::i2c_env_pkg.i2c_coverage::i2c_reg_access_cg".
+[INFO ] 2025-11-02 12:38:19 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35101
+[ERROR] 2025-11-02 12:38:19 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "::i2c_env_pkg.i2c_coverage::i2c_reg_access_cg".
+[INFO ] 2025-11-02 12:39:01 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36923
+[ERROR] 2025-11-02 12:39:02 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "::i2c_env_pkg.i2c_coverage::i2c_reg_access_cg".
+[INFO ] 2025-11-02 12:42:21 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42865
+[INFO ] 2025-11-02 12:48:20 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35939
+[INFO ] 2025-11-02 12:49:12 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35441
+[INFO ] 2025-11-02 12:49:46 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37923
+[INFO ] 2025-11-02 12:57:04 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45569
+[ERROR] 2025-11-02 12:57:05 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Incorrect command parameters. Unknown option 'html'
+[INFO ] 2025-11-02 12:57:45 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38959
+[ERROR] 2025-11-02 12:57:46 [com.cadence.mdv.cli.engine.CLIEnvironment] [BLNativeThread-1] - command reportMetricsIMC failed
+
+com.cadence.mdv.exceptions.MDVException: mix of inst & type
+	at com.cadence.mdv.cli.commands.ReportMetricsCmd.parsePaths(ReportMetricsCmd.java:144)
+	at com.cadence.mdv.cli.commands.ReportMetricsIMCCmd.internalInvoke(ReportMetricsIMCCmd.java:80)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:152)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:157)
+	at com.cadence.mdv.cli.engine.CLIEnvironment.runJavaCmd(CLIEnvironment.java:235)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative.runCommandNative(Native Method)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative$87.callInternal(BLNative.java:1927)
+	at com.cadence.mdv.util.CallableWithSource.call(CallableWithSource.java:25)
+	at com.cadence.mdv.central.tools.SystemInterThreadCommXRegistry.lambda$wrap$1(SystemInterThreadCommXRegistry.java:61)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[ERROR] 2025-11-02 12:57:46 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Mixing types and instances hierarchies is not supported for report_metrics command.
+[INFO ] 2025-11-02 12:58:16 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43105
+[ERROR] 2025-11-02 12:58:17 [com.cadence.mdv.cli.engine.CLIEnvironment] [BLNativeThread-1] - command reportMetricsIMC failed
+
+com.cadence.mdv.exceptions.MDVException: no entity specified
+	at com.cadence.mdv.report.MDVReportServicesImpl.generateDynamicRecursiveMetricsReport(MDVReportServicesImpl.java:812)
+	at com.cadence.mdv.report.MDVReportServicesImpl.generateMetricsReport(MDVReportServicesImpl.java:910)
+	at com.cadence.mdv.report.MDVReportServicesImpl.generateMetricsReport(MDVReportServicesImpl.java:997)
+	at com.cadence.mdv.cli.commands.ReportMetricsIMCCmd.internalInvoke(ReportMetricsIMCCmd.java:84)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:152)
+	at com.cadence.mdv.cli.commands.BaseCliJavaCMD.invoke(BaseCliJavaCMD.java:157)
+	at com.cadence.mdv.cli.engine.CLIEnvironment.runJavaCmd(CLIEnvironment.java:235)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative.runCommandNative(Native Method)
+	at com.cadence.mdv.bl.impl.core.blNative.BLNative$87.callInternal(BLNative.java:1927)
+	at com.cadence.mdv.util.CallableWithSource.call(CallableWithSource.java:25)
+	at com.cadence.mdv.central.tools.SystemInterThreadCommXRegistry.lambda$wrap$1(SystemInterThreadCommXRegistry.java:61)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+[ERROR] 2025-11-02 12:58:17 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Report recursive can only be generated on a specific entity. Please specify an entity and try again
+[INFO ] 2025-11-02 12:59:04 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43137
+[INFO ] 2025-11-02 13:14:08 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43737
+[INFO ] 2025-11-02 13:14:28 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36075
+[INFO ] 2025-11-02 13:17:09 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41387
+[ERROR] 2025-11-02 13:17:10 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - repeated -kind "-kind": should be -append, -showempty, -source, -assertionStatus, -allAssertionCounters, -aspect, -cumulative, -local, -grading, -cross,, -inst|-type, -cubeExpand, or entitynames.
+[INFO ] 2025-11-02 13:28:28 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37317
+[INFO ] 2025-11-02 13:30:02 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36193
+[INFO ] 2025-11-02 15:39:10 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36795
+[INFO ] 2025-11-02 16:07:41 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46369
+[ERROR] 2025-11-02 16:07:42 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "imc".
+[ERROR] 2025-11-02 16:07:42 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Merge output directory cov_work/scope/final already exists. Either specify a different name for the output directory, or use the -overwrite option to overwrite the existing output directory.	   
+[INFO ] 2025-11-02 16:08:12 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35939
+[ERROR] 2025-11-02 16:08:12 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "imc".
+[INFO ] 2025-11-02 16:08:34 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43165
+[INFO ] 2025-11-02 16:14:17 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38475
+[ERROR] 2025-11-02 16:14:18 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "imc".
+[INFO ] 2025-11-02 16:14:39 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45673
+[INFO ] 2025-11-02 16:41:42 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39755
+[INFO ] 2025-11-02 16:42:00 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35821
+[INFO ] 2025-11-02 16:42:53 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38145
+[INFO ] 2025-11-02 16:43:07 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36367
+[INFO ] 2025-11-02 16:45:02 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36089
+[ERROR] 2025-11-02 16:45:02 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - 0utput directory report/test_final_report_html already exists, and will not be overwritten. Use the '-overwrite' option to overwrite the existing directory, or specify a different directory name with the -out option, and rerun the command.
+[ERROR] 2025-11-02 16:45:02 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - invalid command name "-metrics".
+[INFO ] 2025-11-02 16:45:25 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40163
+[INFO ] 2025-11-02 16:47:56 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46161
+[INFO ] 2025-11-02 16:48:26 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44391
+[ERROR] 2025-11-02 16:48:27 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - repeated -inst|-type "-inst": should be -metrics, -covered|-uncovered|-excludes|-unr|-all|-both, -exclComments, -append, -showempty, -source, -assertionStatus, -allAssertionCounters, -aspect, -cumulative, -local, -grading, -cross, -kind,,, -cubeExpand, or entitynames.
+[INFO ] 2025-11-02 16:50:53 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34571
+[INFO ] 2025-11-02 17:17:32 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37523
+[ERROR] 2025-11-02 17:17:33 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "-overwrite".
+[INFO ] 2025-11-02 17:17:54 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33129
+[INFO ] 2025-11-02 17:19:17 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38217
+[ERROR] 2025-11-02 17:19:18 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - bad option "-inst*": should be -covered|-uncovered|-excludes|-unr|-all|-both, -exclComments, -append, -showempty, -source, -assertionStatus, -allAssertionCounters, -aspect, -cumulative, -local, -grading, -cross, -kind,, -inst|-type,, -cubeExpand, or entitynames.
+[INFO ] 2025-11-02 17:20:11 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33593
+[INFO ] 2025-11-02 17:20:58 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37119
+[INFO ] 2025-11-02 17:22:20 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46231
+[INFO ] 2025-11-02 17:24:40 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41477
+[ERROR] 2025-11-02 17:24:41 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "-overwrite".
+[INFO ] 2025-11-02 17:24:59 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35477
+[INFO ] 2025-11-02 18:23:39 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40767
+[ERROR] 2025-11-02 18:23:40 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "module".
+[ERROR] 2025-11-02 18:23:40 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - invalid command name "imc".
+[INFO ] 2025-11-02 18:24:25 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39091
+[INFO ] 2025-11-02 20:24:51 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35847
+[ERROR] 2025-11-02 20:24:51 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - Target model generation failed.
+[ERROR] 2025-11-02 20:24:52 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - Simulation coverage merging failed.
+[ERROR] 2025-11-02 20:24:52 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - None of the input runs have a valid model - merge aborted.
+[INFO ] 2025-11-02 20:48:34 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33621
+[INFO ] 2025-11-02 20:50:18 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45629
+[INFO ] 2025-11-02 20:53:51 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33531
+[INFO ] 2025-11-02 21:14:44 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35283
+[INFO ] 2025-11-02 21:15:04 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45859
+[ERROR] 2025-11-02 21:15:08 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Mandatory option '-out' is missing.
+[ERROR] 2025-11-02 21:15:15 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - invalid command name "-help".
+[INFO ] 2025-11-02 21:17:14 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41327
+[INFO ] 2025-11-02 21:49:12 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46023
+[INFO ] 2025-11-02 21:50:15 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33095
+[INFO ] 2025-11-02 21:57:57 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45125
+[INFO ] 2025-11-02 21:59:10 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38723
+[INFO ] 2025-11-02 21:59:27 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41871
+[INFO ] 2025-11-02 22:01:05 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37131
+[INFO ] 2025-11-04 08:23:58 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35545
+[INFO ] 2026-02-04 23:09:15 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42319
+[INFO ] 2026-02-05 00:08:00 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43065
+[INFO ] 2026-02-05 00:08:29 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33461
