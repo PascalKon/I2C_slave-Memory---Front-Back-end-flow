@@ -1,0 +1,4 @@
+opt_spatial_power_driven	false	/
+timing_report_fields	timing_point flags arc edge cell fanout load transition delay arrival instance_location	/
+timing_report_enable_novus_header	true	/
+design_bottom_routing_layer	MET2	/
