@@ -1,0 +1,49 @@
+{
+ "filetype": "conformal-table",
+ "data": [
+  {
+   "Object": "/i2c_inst/sda_out_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/SDA",
+   "Type": "BUS",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/SDA",
+   "Type": "BUS",
+   "Design": "R",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  }
+ ],
+ "cols": [
+  {
+   "key": "Object"
+  },
+  {
+   "key": "Type"
+  },
+  {
+   "key": "Design"
+  },
+  {
+   "key": "User Setup constant"
+  },
+  {
+   "key": "LEC constant"
+  }
+ ],
+ "sort": [
+  "-highlite"
+ ]
+}
