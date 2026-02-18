@@ -1,0 +1,17 @@
+Voltage source current:
+      Range  Source       Source        Location    Layer
+      Index  Current      Name          (um)
+      -----  --------     -------------------------------
+         1   -1.9967e-03A   vddvsrc1   10.56, 6.03  METTPL
+*
+* Data filtering results for voltage source current:
+  Minimum, Average, Maximum Voltage Source Current: -1.997mA, -1.997mA, -1.997mA
+  Total Current: -1.997mA
+    Range 1(  -1.997mA  -    -1.996mA ):         1 (100.00%)
+    Range 2(  -1.997mA  -    -1.997mA ):         0 (  0.00%)
+    Range 3(  -1.997mA  -    -1.997mA ):         0 (  0.00%)
+    Range 4(  -1.997mA  -    -1.997mA ):         0 (  0.00%)
+    Range 5(  -1.997mA  -    -1.997mA ):         0 (  0.00%)
+    Range 6(  -1.997mA  -    -1.997mA ):         0 (  0.00%)
+    Range 7(  -1.997mA  -    -1.997mA ):         0 (  0.00%)
+    Range 8(  -1.997mA  -    -1.997mA ):         0 (  0.00%)
