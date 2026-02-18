@@ -1,0 +1,222 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Feb 17 14:37:39 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.35-s114_1 (64bit) 10/13/2022 12:11 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.35-s114_1 NR220912-2004/21_15-UB (database version 18.20.592_1) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 10/13/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+encMessage warning 1
+encMessage debug 1
+is_common_ui_mode
+restoreDesign /home/p/paschalk/Desktop/I2C_Memory/flows/innovus/Innovus_Results/Test/Saved_Designs/Top_Test_6_Post_MFill_Pre_Sign_Off.enc.dat I2CAndMemory
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+setDrawView place
+ui_view_box
+zoomBox 44.59600 28.36900 322.00900 276.71300
+zoomBox 91.20300 59.93800 291.63400 239.36700
+zoomBox 138.02700 91.65500 261.11700 201.84700
+zoomBox 158.70700 105.66200 247.64000 185.27600
+zoomBox 166.78300 111.13200 242.37700 178.80500
+zoomBox 173.64800 115.78200 237.90300 173.30400
+zoomBox 184.44300 123.09400 230.86800 164.65400
+zoomBox 189.14200 129.62600 222.68500 159.65400
+zoomBox 190.97700 132.17700 219.48900 157.70100
+zoomBox 192.48700 134.93700 216.72300 156.63300
+zoomBox 193.77100 137.28400 214.37100 155.72500
+uiSetTool select
+dbquery -area {199.874 152.874 207.069 150.155} -objType inst
+dbquery -area {199.874 152.874 207.069 150.155} -objType regular
+dbquery -area {199.874 152.874 207.069 150.155} -objType special
+zoomBox 192.03100 134.80100 216.26600 156.49600
+zoomBox 181.41000 119.64200 227.83600 161.20300
+zoomBox 177.48800 114.04500 232.10700 162.94100
+zoomBox 167.44500 99.71500 243.04400 167.39200
+zoomBox 134.30800 52.42800 279.13500 182.07900
+zoomBox 122.07500 34.97100 292.45900 187.50100
+zoomBox 107.68300 14.43300 308.13500 193.88000
+zoomBox 90.75100 -9.73000 326.57700 201.38500
+zoomBox 47.39500 -71.60000 373.79900 220.60100
+zoomBox 8.79500 -95.81800 392.80000 247.94800
+zoomBox -36.79100 -122.46900 414.97900 281.96200
+zoomBox -90.42200 -153.82200 441.07200 321.97900
+zoomBox -49.58000 -84.51500 402.19000 319.91600
+zoomBox -14.86500 -25.60400 369.14100 318.16300
+zoomBox 16.05900 25.73800 342.46400 317.94000
+ctd_win -side none -id ctd_window
+selectObject Net CTS_1
+zoomSelected
+zoomBox 91.34900 112.26400 272.86700 274.76100
+zoomBox 111.67300 125.29700 265.96300 263.41900
+zoomBox 128.43900 136.28400 259.58600 253.68900
+zoomBox 142.43600 145.57300 253.91100 245.36700
+zoomBox 154.13800 153.44700 248.89200 238.27200
+zoomBox 163.80900 160.14000 244.35000 232.24100
+zoomBox 172.03000 165.82900 240.49000 227.11500
+zoomBox 190.00700 178.26900 232.04900 215.90600
+zoomBox 194.24900 181.23900 229.98500 213.23000
+zoomBox 197.85500 183.76200 228.23100 210.95500
+zoomBox 200.92000 185.90800 226.74000 209.02200
+zoomBox 203.52500 187.73200 225.47200 207.37900
+zoomBox 205.74000 189.28200 224.39500 205.98200
+zoomBox 207.62200 190.60000 223.47900 204.79500
+zoomBox 209.22200 191.71900 222.70100 203.78600
+zoomBox 210.47400 192.73100 221.93200 202.98800
+zoomBox 211.68600 193.57400 221.42500 202.29200
+zoomBox 212.71600 194.29000 220.99400 201.70100
+ui_view_box
+uiSetTool select
+dbquery -area {216.218 199.27 218.97 196.635} -objType inst
+dbquery -area {216.218 199.27 218.97 196.635} -objType regular
+dbquery -area {216.218 199.27 218.97 196.635} -objType special
+selectWire 208.0600 196.9300 218.0600 198.9300 5 _FILLS_RESERVED
+deselectWire 208.0600 196.9300 218.0600 198.9300 5 _FILLS_RESERVED
+deselectWire 208.0600 196.9300 218.0600 198.9300 5 _FILLS_RESERVED
+selectWire 208.0600 196.9300 218.0600 198.9300 5 _FILLS_RESERVED
+deselectWire 208.0600 196.9300 218.0600 198.9300 5 _FILLS_RESERVED
+deselectWire 208.0600 196.9300 218.0600 198.9300 5 _FILLS_RESERVED
+selectWire 208.0600 196.9300 218.0600 198.9300 5 _FILLS_RESERVED
+deselectWire 208.0600 196.9300 218.0600 198.9300 5 _FILLS_RESERVED
+deselectWire 208.0600 196.9300 218.0600 198.9300 5 _FILLS_RESERVED
+selectWire 208.0600 196.9300 218.0600 198.9300 5 _FILLS_RESERVED
+selectWire 218.8600 196.9300 225.9200 198.9300 5 gnd
+selectVia 217.4200 199.2300 220.4200 202.2300 6 gnd
+zoomBox 207.34200 190.64700 236.34400 202.62800
+fit
+deselectAll
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -analysis_view PVT_1_80_V_WC_VIEW -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+set_power_output_dir -reset
+set_power_output_dir ./power_final
+set_default_switching_activity -reset
+set_default_switching_activity -input_activity 0.2 -period 10.0
+read_activity_file -reset
+set_power -reset
+set_powerup_analysis -reset
+set_dynamic_power_simulation -reset
+report_power -rail_analysis_format VS -outfile ./power_final/I2CAndMemory.rpt
+set_rail_analysis_mode -method era_static -power_switch_eco false -generate_movies false -save_voltage_waveforms false -accuracy xd -analysis_view PVT_1_80_V_WC_VIEW -process_techgen_em_rules false -enable_rlrp_analysis false -extraction_tech_file Libs/QRS_PVS/Max/qrcTechFile -vsrc_search_distance 50 -ignore_shorts false -enable_manufacturing_effects false -report_via_current_direction false
+setDrawView place
+create_power_pads -net vdd -auto_fetch
+setDrawView place
+create_power_pads -net vdd -vsrc_file power_final/vdd,pp
+setDrawView place
+create_power_pads -net vdd -auto_fetch
+setDrawView place
+create_power_pads -net vdd -vsrc_file power_final/vdd.pp
+set_pg_nets -net vdd -voltage 1.8 -threshold 1.62
+set_power_data -reset
+set_power_data -format current -scale 1 power_final/static_vdd.ptiavg
+set_power_pads -reset
+set_power_pads -net vdd -format xy -file power_final/vdd.pp
+set_package -reset
+set_package -spice {} -mapping {}
+set_net_group -reset
+set_advanced_rail_options -reset
+analyze_rail -type net -results_directory ./rail_final vdd
+setLayerPreference powerNet -color {#0000FF #0010DE #0020BD #00319C #00417B #00525A #006239 #007318 #088300 #299400 #4AA400 #6AB400 #8BC500 #ACD500 #CDE600 #EEF600 #FFF900 #FFED00 #FFE200 #FFD600 #FFCB00 #FFBF00 #FFB400 #FFA800 #FF9500 #FF8000 #FF6A00 #FF5500 #FF4000 #FF2A00 #FF1500 #FF0000}
+set_power_rail_display -plot none
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -enable_voltage_sources 0
+set_power_rail_display -enable_percentage_range 0
+fit
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+set_power_rail_display -plot {} -reset_color_scale
+::read_power_rail_results -power_db power_final/power.db -rail_directory rail_final/vdd_25C_avg_1 -instance_voltage_window { timing  whole  } -instance_voltage_method {  worst  best  avg  worstavg worstslidingavg bestslidingavg }
+set_power_rail_display -plot ip
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -enable_voltage_sources 1
+set_power_rail_display -enable_voltage_sources 0
+set_power_rail_display -enable_voltage_sources 1
+dumpToGIF ../../../total_power.png
+set_power_rail_display -plot ip_clk
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -plot none
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -plot ir
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -range_min 0 -range_max 1.38795375824 -advance_mode false
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -range_min 0 -range_max 1.38795375824 -advance_mode false
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -range_min 0 -range_max 1.38795375824 -advance_mode false
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -enable_percentage_range 1
+zoomBox -243.14100 47.12200 200.85900 258.21400
+zoomBox -309.13200 32.42700 213.22200 280.77100
+zoomBox -344.47400 14.82000 270.06100 306.99000
+zoomBox -380.19800 -6.19500 342.78500 337.53500
+zoomBox -416.57600 -31.53500 433.99300 372.85300
+zoomBox -459.37300 -61.34800 541.29700 414.40300
+set_power_rail_display -range_min 0 -range_max 1 -advance_mode false -filter_max 0.1029411764705882
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -range_min 0 -range_max 1 -advance_mode false -filter_max 0.102941177785
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -range_min 0 -range_max 1 -advance_mode false -filter_max 1
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -range_min 0 -range_max 1 -advance_mode false
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+zoomBox -368.06700 -40.57300 482.50400 363.81600
+zoomBox -168.41400 4.85400 353.94400 253.20000
+zoomBox -120.75100 15.69900 323.25300 226.79300
+zoomBox -168.41400 4.85400 353.94400 253.20000
+zoomBox -224.48800 -7.90500 390.05100 284.26700
+zoomBox -290.45800 -22.91500 432.53000 320.81700
+zoomBox -368.07000 -40.57400 482.50500 363.81700
+pan 237.21900 312.78000
+pan 74.75600 80.27000
+zoomBox 22.48800 -22.85600 745.47600 320.87600
+zoomBox -56.09500 -50.58100 794.48000 353.81000
+pan -7.65200 6.10300
+zoomBox -63.74700 -9.55300 786.82800 394.83800
+zoomBox -63.74700 30.88600 786.82800 435.27700
+zoomBox -63.74700 -9.55300 786.82800 394.83800
+zoomBox -63.74700 -49.99200 786.82800 354.39900
+zoomBox 18.10200 -22.44400 741.09100 321.28800
+pan -100.06700 -31.04000
+zoomBox -81.96500 -47.31100 641.02400 296.42100
+zoomBox -168.14100 -73.09300 682.43400 331.29800
+pan 88.29500 119.18200
+set_power_rail_display -enable_percentage_range 0
+set_power_rail_display -range_min 0 -range_max 1.38795375824 -advance_mode false
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -plot none
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+set_power_rail_display -plot ip
+setLayerPreference powerNet -color {#0000ff #0010de #0020bd #00319c #00417b #00525a #006239 #007318 #088300 #299400 #4aa400 #6ab400 #8bc500 #acd500 #cde600 #eef600 #fff900 #ffed00 #ffe200 #ffd600 #ffcb00 #ffbf00 #ffb400 #ffa800 #ff9500 #ff8000 #ff6a00 #ff5500 #ff4000 #ff2a00 #ff1500 #ff0000}
+zoomBox -151.62500 -70.56500 849.05200 405.18900

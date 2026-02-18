@@ -1,0 +1,37 @@
+################################################
+# Run Rail config file                        #
+################################################
+set_var eps_rail_base_flag 0
+set_var eps_rail_domain_name {}
+set_var eps_rail_power_nets "vdd"
+set_var eps_rail_power_voltage "1.8"
+set_var eps_rail_power_threshold "1.62"
+set_var  eps_rail_ground_nets ""
+set_var eps_rail_ground_voltage ""
+set_var eps_rail_ground_threshold ""
+set_var eps_rail_power_data_format current
+set_var eps_rail_scale_flag 0
+set_var eps_rail_scale ""
+set_var eps_rail_repeat_flag 0
+set_var eps_rail_repeat ""
+set_var eps_rail_total_power_flag 0
+set_var eps_rail_total_power ""
+set_var eps_rail_power_files "power_final/static_vdd.ptiavg"
+set_var eps_rail_power_pad_file {power_final/vdd.pp}
+set_var eps_rail_power_pad_nets {vdd}
+set_var eps_rail_power_pad_format {xy}
+set_var eps_rail_package_flag 0
+set_var eps_rail_package_model ""
+set_var eps_rail_package_mapping ""
+set_var eps_rail_package_scale_flag 0
+set_var eps_rail_package_scale "" 
+set_var eps_rail_result_dir ./rail_final
+set_var eps_rail_power_group ""
+set_var eps_rail_power_group_nets ""
+set_var eps_rail_ground_group ""
+set_var eps_rail_ground_group_nets ""
+set_var eps_rail_start_time ""
+set_var eps_rail_stop_time ""
+set_var eps_rail_resolution ""
+set_var eps_rail_vstorm2_include_begin {}
+set_var eps_rail_vstorm2_include_end {}

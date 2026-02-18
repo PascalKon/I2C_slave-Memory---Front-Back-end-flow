@@ -1,0 +1,72 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*  Voltus Scheduler (RC extraction scheduler)
+*  Copyright 2013 Cadence Design Systems, Inc.
+*  Version: v21.15-s076_1 (09/23/2022 08:39:08)
+*  Excecutable: /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/INNOVUSEXPORT/tools.lnx86/ssvtools/bin/64bit/voltus_scheduler
+*  Command Line: -nt 1 -usecellid -session_file ./work/sfe.session -prev_session_file ./work/sfe.session.prev -cmd ./work/voltus_scheduler.cmd 
+*  Run by paschalk on Tue Feb 17 14:49:38 2026
+*  Hostname: cn89.it.auth.gr
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Started Voltus Scheduler at 14:49:35 02/17/2026
+
+Extraction option setup as:
+setenv gray_data NONE
+setenv enable_cluster_overhang_via false
+setenv enable_dfm_mask_conflict_shape false
+Begin Preparing Data for Parasitic Extraction
+ * Begin Load cell library
+ * Ended Load cell library: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=29.28MB/3885.59MB/2321.50MB) TimeFromStart: 3.79s Mem: 29.28MB
+
+ * Begin Pre-parse DEF and build hierachy
+ * Ended Pre-parse DEF and build hierachy: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=46.21MB/3899.91MB/2321.50MB) TimeFromStart: 4.82s Mem: 46.21MB
+
+ * Begin Flatten, partition and dump design
+ * Begin Create cell name DB
+ * Ended Create cell name DB: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=562.96MB/4670.34MB/2503.76MB) TimeFromStart: 5.23s Mem: 562.96MB
+
+ * Begin Write cell name DB
+ * Ended Write cell name DB: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=562.96MB/4670.34MB/2503.76MB) TimeFromStart: 5.23s Mem: 562.96MB
+
+ * Ended Flatten, partition and dump design: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=562.99MB/4670.34MB/2503.80MB) TimeFromStart: 5.52s Mem: 562.99MB
+
+Extracting following DFM effects:
+MetalFill        : ON
+WEE Effects      : OFF
+Erosion Effects  : n/a
+T/B Enlargements : n/a
+R(w) Effects     : n/a
+R(w,s) Effects   : n/a
+R(sw,st) Effects : n/a
+TC(w) Effects    : n/a
+Some effects indicate n/a because of non-availability of relevant input data (or) requested to be off.
+Ended Preparing Data for Parasitic Extraction: (cpu=0:00:01, real=0:00:02, mem(process/total/peak)=32.53MB/4670.34MB/2503.80MB)
+
+Finished Voltus Scheduler at 14:49:40 02/17/2026 (cpu=0:00:01, real=0:00:05, peak mem=2503.80MB)
+Current Innovus resource usage: (total cpu=0:02:49, real=0:14:14, mem=1973.33MB)
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*  Voltus Scheduler (RC extraction scheduler)
+*  Copyright 2013 Cadence Design Systems, Inc.
+*  Version: v21.15-s076_1 (09/23/2022 08:39:08)
+*  Excecutable: /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/INNOVUSEXPORT/tools.lnx86/ssvtools/bin/64bit/voltus_scheduler
+*  Command Line: -skip_prep -nt 1 -usecellid -session_file ./work/sfe.session -prev_session_file ./work/sfe.session.prev -cmd ./work/voltus_scheduler.cmd -zx /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/INNOVUSEXPORT/tools.lnx86/ssvtools/bin/64bit/voltus_extractor 
+*  Run by paschalk on Tue Feb 17 14:49:40 2026
+*  Hostname: cn89.it.auth.gr
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Started Voltus Scheduler at 14:49:39 02/17/2026
+
+Extraction option setup as:
+setenv gray_data NONE
+setenv enable_cluster_overhang_via false
+setenv enable_dfm_mask_conflict_shape false
+Begin Parasitic Extraction
+Extracting Progress:
+    0% at 14:49:40 02/17/2026
+Extraction command for partition 0: /mnt/apps/prebuilt/EDA/cadence/2022-23/RHELx86/INNOVUSEXPORT/tools.lnx86/ssvtools/bin/64bit/voltus_extractor -vstorm -partition 0 -partition_bbox 0 -2147483648 3438400 2147483647 -sfedb ./work/SFEDB -cachedir /tmp/innovus_temp_146358_cn89.it.auth.gr_paschalk_LseSCo/zx_tmp_cn89.it.auth.gr_158147/Z7RZ1G -cmd ./work/vdd.cmd
+  100% at 14:49:49 02/17/2026
+Ended Parasitic Extraction: (cpu=0:00:01, real=0:00:08, mem(process/total/peak)=16.75MB/3869.59MB/2503.80MB)
+
+Finished Voltus Scheduler at 14:49:49 02/17/2026 (cpu=0:00:01, real=0:00:10, peak mem=2128.70MB)
+Current Innovus resource usage: (total cpu=0:02:49, real=0:14:23, mem=1957.55MB)
