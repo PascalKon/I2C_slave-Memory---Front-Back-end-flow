@@ -1,0 +1,629 @@
+- Cell: AN21HDX1 Tag: 
+ Temperature: 25
+* Cell: AN21HDX1 Pin: vdd Instantiation: 7 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AN221HDX1 Tag: 
+ Temperature: 25
+* Cell: AN221HDX1 Pin: vdd Instantiation: 18 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AN22HDX1 Tag: 
+ Temperature: 25
+* Cell: AN22HDX1 Pin: vdd Instantiation: 110 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AN311HDX0 Tag: 
+ Temperature: 25
+* Cell: AN311HDX0 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AN31HDX1 Tag: 
+ Temperature: 25
+* Cell: AN31HDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AN321HDX0 Tag: 
+ Temperature: 25
+* Cell: AN321HDX0 Pin: vdd Instantiation: 5 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AN32HDX1 Tag: 
+ Temperature: 25
+* Cell: AN32HDX1 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AND2HDX1 Tag: 
+ Temperature: 25
+* Cell: AND2HDX1 Pin: vdd Instantiation: 10 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: ANTENNACELLN2HD Tag: 
+ Temperature: 25
+* Cell: ANTENNACELLN2HD Pin: vdd Instantiation: 7 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO211HDX0 Tag: 
+ Temperature: 25
+* Cell: AO211HDX0 Pin: vdd Instantiation: 9 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO211HDX1 Tag: 
+ Temperature: 25
+* Cell: AO211HDX1 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO21HDX1 Tag: 
+ Temperature: 25
+* Cell: AO21HDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO221HDX0 Tag: 
+ Temperature: 25
+* Cell: AO221HDX0 Pin: vdd Instantiation: 10 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO222HDX0 Tag: 
+ Temperature: 25
+* Cell: AO222HDX0 Pin: vdd Instantiation: 24 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO22HDX0 Tag: 
+ Temperature: 25
+* Cell: AO22HDX0 Pin: vdd Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO22HDX1 Tag: 
+ Temperature: 25
+* Cell: AO22HDX1 Pin: vdd Instantiation: 24 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO311HDX0 Tag: 
+ Temperature: 25
+* Cell: AO311HDX0 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: AO32HDX1 Tag: 
+ Temperature: 25
+* Cell: AO32HDX1 Pin: vdd Instantiation: 8 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: BTHHDX1 Tag: 
+ Temperature: 25
+* Cell: BTHHDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: BTLHDX1 Tag: 
+ Temperature: 25
+* Cell: BTLHDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: BUHDX1 Tag: 
+ Temperature: 25
+* Cell: BUHDX1 Pin: vdd Instantiation: 15 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: BUHDX12 Tag: 
+ Temperature: 25
+* Cell: BUHDX12 Pin: vdd Instantiation: 8 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: BUHDX2 Tag: 
+ Temperature: 25
+* Cell: BUHDX2 Pin: vdd Instantiation: 10 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: EN2HDX0 Tag: 
+ Temperature: 25
+* Cell: EN2HDX0 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: EO2HDX0 Tag: 
+ Temperature: 25
+* Cell: EO2HDX0 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: INHDX0 Tag: 
+ Temperature: 25
+* Cell: INHDX0 Pin: vdd Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: INHDX1 Tag: 
+ Temperature: 25
+* Cell: INHDX1 Pin: vdd Instantiation: 39 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: MU2HDX0 Tag: 
+ Temperature: 25
+* Cell: MU2HDX0 Pin: vdd Instantiation: 567 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: MU2IHDX0 Tag: 
+ Temperature: 25
+* Cell: MU2IHDX0 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: MU2IHDX1 Tag: 
+ Temperature: 25
+* Cell: MU2IHDX1 Pin: vdd Instantiation: 9 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NA22HDX1 Tag: 
+ Temperature: 25
+* Cell: NA22HDX1 Pin: vdd Instantiation: 17 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NA2HDX1 Tag: 
+ Temperature: 25
+* Cell: NA2HDX1 Pin: vdd Instantiation: 81 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NA2I1HDX1 Tag: 
+ Temperature: 25
+* Cell: NA2I1HDX1 Pin: vdd Instantiation: 18 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NA3HDX1 Tag: 
+ Temperature: 25
+* Cell: NA3HDX1 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NA3I1HDX1 Tag: 
+ Temperature: 25
+* Cell: NA3I1HDX1 Pin: vdd Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NA3I2HDX1 Tag: 
+ Temperature: 25
+* Cell: NA3I2HDX1 Pin: vdd Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NA4HDX1 Tag: 
+ Temperature: 25
+* Cell: NA4HDX1 Pin: vdd Instantiation: 29 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NA4I3HDX1 Tag: 
+ Temperature: 25
+* Cell: NA4I3HDX1 Pin: vdd Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NA5I3HDX1 Tag: 
+ Temperature: 25
+* Cell: NA5I3HDX1 Pin: vdd Instantiation: 11 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NO2HDX1 Tag: 
+ Temperature: 25
+* Cell: NO2HDX1 Pin: vdd Instantiation: 61 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NO2I1HDX1 Tag: 
+ Temperature: 25
+* Cell: NO2I1HDX1 Pin: vdd Instantiation: 31 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NO3HDX0 Tag: 
+ Temperature: 25
+* Cell: NO3HDX0 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NO3HDX1 Tag: 
+ Temperature: 25
+* Cell: NO3HDX1 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NO3I1HDX1 Tag: 
+ Temperature: 25
+* Cell: NO3I1HDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NO3I2HDX1 Tag: 
+ Temperature: 25
+* Cell: NO3I2HDX1 Pin: vdd Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NO4I1HDX1 Tag: 
+ Temperature: 25
+* Cell: NO4I1HDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NO4I2HDX0 Tag: 
+ Temperature: 25
+* Cell: NO4I2HDX0 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NO4I3HDX0 Tag: 
+ Temperature: 25
+* Cell: NO4I3HDX0 Pin: vdd Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NO5I3HDX1 Tag: 
+ Temperature: 25
+* Cell: NO5I3HDX1 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: NO5I4HDX1 Tag: 
+ Temperature: 25
+* Cell: NO5I4HDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OA211HDX0 Tag: 
+ Temperature: 25
+* Cell: OA211HDX0 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OA21HDX1 Tag: 
+ Temperature: 25
+* Cell: OA21HDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OA31HDX1 Tag: 
+ Temperature: 25
+* Cell: OA31HDX1 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OA321HDX1 Tag: 
+ Temperature: 25
+* Cell: OA321HDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OA32HDX1 Tag: 
+ Temperature: 25
+* Cell: OA32HDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: ON211HDX0 Tag: 
+ Temperature: 25
+* Cell: ON211HDX0 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: ON21HDX1 Tag: 
+ Temperature: 25
+* Cell: ON21HDX1 Pin: vdd Instantiation: 24 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: ON221HDX0 Tag: 
+ Temperature: 25
+* Cell: ON221HDX0 Pin: vdd Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: ON311HDX0 Tag: 
+ Temperature: 25
+* Cell: ON311HDX0 Pin: vdd Instantiation: 2 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: ON31HDX0 Tag: 
+ Temperature: 25
+* Cell: ON31HDX0 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: ON321HDX0 Tag: 
+ Temperature: 25
+* Cell: ON321HDX0 Pin: vdd Instantiation: 3 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OR2HDX1 Tag: 
+ Temperature: 25
+* Cell: OR2HDX1 Pin: vdd Instantiation: 4 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: OR3HDX1 Tag: 
+ Temperature: 25
+* Cell: OR3HDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: SDFFRQHDX1 Tag: 
+ Temperature: 25
+* Cell: SDFFRQHDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: SDFFSQHDX1 Tag: 
+ Temperature: 25
+* Cell: SDFFSQHDX1 Pin: vdd Instantiation: 37 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: SDFRRQHDX1 Tag: 
+ Temperature: 25
+* Cell: SDFRRQHDX1 Pin: vdd Instantiation: 620 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+- Cell: SDFRSQHDX1 Tag: 
+ Temperature: 25
+* Cell: SDFRSQHDX1 Pin: vdd Instantiation: 1 Snapped: 0 PowerGate: No Hidden: No
+  Grid:
+          Layer            Node        IntfNode    InternalNode            Elem             Tap           PGTap
+           MET1               1               1               0               0               1               0
+          Total               1               1               0               0               1               0
+
+
+
+Grid Statistics of Net vdd:
+- NODE
+  Total node: 8461
+    Top Level grid node: 8461
+      Top level interface node: 1882
+    Missing interface node: 0
+    Cell internal node: 0
+- ELEM
+  Total element: 8581
+    Top Level grid element: 8581
+    Cell internal element: 0
+- INST
+  Instance logically connected: 1882
+    Tech: 1882
+    StdCell: 0
+    Macro:
+      Early: 0
+      IR: 0
+      EM: 0
+    Current Region:  0
+  Dropped instance due to missing/incomplete cell library: 0
+- TAP
+  Total tap: 1882
+
+
