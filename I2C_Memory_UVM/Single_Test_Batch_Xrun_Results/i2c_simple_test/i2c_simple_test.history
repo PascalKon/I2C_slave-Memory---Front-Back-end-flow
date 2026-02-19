@@ -1,0 +1,1 @@
+s1(02Nov2025:23:57:11):  xrun -batch -f run.args -coverage all +VERBOSITY=UVM_NONE +UVM_TESTNAME=i2c_simple_test -l Single_Test_Batch_Xrun_Results/i2c_simple_test/i2c_simple_test.log +DUMPNAME=Single_Test_Batch_Xrun_Results/i2c_simple_test/i2c_simple_test.vcd -covtest i2c_simple_test 

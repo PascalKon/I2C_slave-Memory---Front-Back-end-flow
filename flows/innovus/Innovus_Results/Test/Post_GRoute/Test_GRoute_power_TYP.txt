@@ -1,0 +1,90 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 21.35-s114_1 (64bit) 10/13/2022 12:11 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2026-Feb-10 23:02:03 (2026-Feb-10 21:02:03 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: I2CAndMemory
+*
+*	Liberty Libraries used: 
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/IO_CELLS_3V/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_3V_LPMOS_typ_1_80V_3_30V_25C.lib
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/D_CELLS_HD/v3_0/liberty_LPMOS/v3_0_0/PVT_1_80V_range/D_CELLS_HD_LPMOS_typ_1_80V_25C.lib
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/IO_CELLS_3V/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_3V_LPMOS_fast_1_98V_3_60V_m40C.lib
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/D_CELLS_HD/v3_0/liberty_LPMOS/v3_0_0/PVT_1_80V_range/D_CELLS_HD_LPMOS_fast_1_98V_m40C.lib
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/IO_CELLS_3V/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_3V_LPMOS_slow_1_62V_3_00V_175C.lib
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/D_CELLS_HD/v3_0/liberty_LPMOS/v3_0_0/PVT_1_80V_range/D_CELLS_HD_LPMOS_slow_1_62V_175C.lib
+*
+*	Power Domain used: 
+*              Rail:        vdd      Voltage:        1.8 
+*
+*       Dynamic View: PVT_1_80_V_TYP_VIEW
+*
+*       Leakage View: PVT_1_80_V_TYP_VIEW
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile /home/p/paschalk/Desktop/I2C_Memory/flows/innovus/Innovus_Results/Test/Post_GRoute/Test_GRoute_power_TYP.txt -view PVT_1_80_V_TYP_VIEW
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.51077225 	   52.3687%
+Total Switching Power:       0.46455469 	   47.6300%
+Total Leakage Power:         0.00001273 	    0.0013%
+Total Power:                 0.97533967 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.4731      0.4036   7.821e-06      0.8766       89.88 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                    0.03772     0.06098    4.91e-06     0.09871       10.12 
+Clock (Combinational)                  0           0           0           0           0 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                             0.5108      0.4646   1.273e-05      0.9753         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+vdd                       1.8     0.5108      0.4646   1.273e-05      0.9753         100 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:            FE_OFC10_rst_n (BUHDX2):         0.002277 
+*                Highest Leakage Power: mem_inst/registers_en_reg[3] (SDFFSQHDX1):        1.325e-08 
+*          Total Cap:      1.87745e-10 F
+*          Total instances in design:  1866
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

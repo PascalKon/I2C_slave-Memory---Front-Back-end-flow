@@ -1,0 +1,15 @@
+
+in2reg       Pinsname: mem_inst/rw_en_reg/RN, Slack value :59.4773, fromClk:       clk, toClk:       clk
+
+==========================
+
+GroupType: Async, View:PVT_1_80_V_WC_VIEW, Setup
+in2reg       Pinsname: i2c_inst/sda_out_reg297/D, Slack value :118.0731, fromClk:       clk, toClk:       clk
+
+reg2reg       Pinsname: mem_inst/\Data_out_reg[5] /D, Slack value :45.0156, fromClk:       clk, toClk:       clk
+
+reg2out       Pinsname:                  SDA, Slack value :118.0503, fromClk:       clk, toClk:       clk
+
+==========================
+
+GroupType: Standard, View:PVT_1_80_V_WC_VIEW, Setup

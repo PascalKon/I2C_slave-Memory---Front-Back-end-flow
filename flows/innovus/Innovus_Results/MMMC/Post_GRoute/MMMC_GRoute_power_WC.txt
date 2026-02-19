@@ -1,0 +1,84 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 21.35-s114_1 (64bit) 10/13/2022 12:11 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2025-Nov-26 01:02:57 (2025-Nov-25 23:02:57 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: I2CAndMemory
+*
+*	Liberty Libraries used: 
+*	        PVT_1_80_V_WC_VIEW: /mnt/apps/prebuilt/eda/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/D_CELLS_HD/v3_0/liberty_LPMOS/v3_0_0/PVT_1_80V_range/D_CELLS_HD_LPMOS_slow_1_62V_175C.lib
+*	        PVT_1_80_V_WC_VIEW: /mnt/apps/prebuilt/eda/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/IO_CELLS_3V/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_3V_LPMOS_slow_1_62V_3_00V_175C.lib
+*
+*	Power Domain used: 
+*              Rail:        vdd      Voltage:       1.62 
+*
+*       Power View : PVT_1_80_V_WC_VIEW
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile /home/p/paschalk/Desktop/I2C_Memory/flows/innovus/Innovus_Results/MMMC/Post_GRoute/MMMC_GRoute_power_WC.txt -view PVT_1_80_V_WC_VIEW
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.43075388 	   54.1626%
+Total Switching Power:       0.36021720 	   45.2934%
+Total Leakage Power:         0.00432666 	    0.5440%
+Total Power:                 0.79529774 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.3956      0.3223    0.002608      0.7206        90.6 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                    0.03514     0.03788    0.001718     0.07473       9.397 
+Clock (Combinational)                  0           0           0           0           0 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                             0.4308      0.3602    0.004327      0.7953         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+vdd                      1.62     0.4308      0.3602    0.004327      0.7953         100 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:            FE_OFC11_rst_n (BUHDX2):         0.001769 
+*                Highest Leakage Power: mem_inst/registers_en_reg[0] (DFFSHDX0):        4.642e-06 
+*          Total Cap:      1.80537e-10 F
+*          Total instances in design:  1856
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

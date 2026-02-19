@@ -1,0 +1,1087 @@
+Clock tree timing engine global stage delay update for PVT_1_80_V_WC_DELAY:setup.early...
+Clock tree timing engine global stage delay update for PVT_1_80_V_WC_DELAY:setup.early done. (took cpu=0:00:00.2 real=0:00:00.1)
+Clock tree timing engine global stage delay update for PVT_1_80_V_WC_DELAY:setup.late...
+Clock tree timing engine global stage delay update for PVT_1_80_V_WC_DELAY:setup.late done. (took cpu=0:00:00.1 real=0:00:00.0)
+Clock tree timing engine global stage delay update for PVT_1_80_V_TYP_DELAY:both.early...
+Clock tree timing engine global stage delay update for PVT_1_80_V_TYP_DELAY:both.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for PVT_1_80_V_TYP_DELAY:both.late...
+Clock tree timing engine global stage delay update for PVT_1_80_V_TYP_DELAY:both.late done. (took cpu=0:00:00.1 real=0:00:00.0)
+Clock tree timing engine global stage delay update for PVT_1_80_V_BC_DELAY:hold.early...
+Clock tree timing engine global stage delay update for PVT_1_80_V_BC_DELAY:hold.early done. (took cpu=0:00:00.1 real=0:00:00.0)
+Clock tree timing engine global stage delay update for PVT_1_80_V_BC_DELAY:hold.late...
+Clock tree timing engine global stage delay update for PVT_1_80_V_BC_DELAY:hold.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+
+Skew Group Structure:
+=====================
+
+-------------------------------------------------------------------
+Skew Group      Sources    Constrained Sinks    Unconstrained Sinks
+-------------------------------------------------------------------
+clk/bc_mode        1              659                    0
+clk/typ_mode       1              659                    0
+clk/wc_mode        1              659                    0
+-------------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner                      Skew Group      ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PVT_1_80_V_WC_DELAY:setup.early    clk/bc_mode         -        0.784     0.831     0.810        0.011       ignored                  -         0.047              -
+                                   clk/typ_mode        -        0.784     0.831     0.810        0.011       ignored                  -         0.047              -
+                                   clk/wc_mode         -        0.784     0.831     0.810        0.011       ignored                  -         0.047              -
+PVT_1_80_V_WC_DELAY:setup.late     clk/bc_mode     none         1.003     1.063     1.036        0.014       explicit             0.400         0.060    100% {1.003, 1.063}
+                                   clk/typ_mode    none         1.003     1.063     1.036        0.014       explicit             0.400         0.060    100% {1.003, 1.063}
+                                   clk/wc_mode     *0.500       1.003     1.063     1.036        0.014       explicit             0.400         0.060    100% {1.003, 1.063}
+PVT_1_80_V_TYP_DELAY:both.early    clk/bc_mode         -        0.441     0.467     0.455        0.006       ignored                  -         0.025              -
+                                   clk/typ_mode        -        0.441     0.467     0.455        0.006       ignored                  -         0.025              -
+                                   clk/wc_mode         -        0.441     0.467     0.455        0.006       ignored                  -         0.025              -
+PVT_1_80_V_TYP_DELAY:both.late     clk/bc_mode         -        0.567     0.600     0.584        0.008       ignored                  -         0.033              -
+                                   clk/typ_mode        -        0.567     0.600     0.584        0.008       ignored                  -         0.033              -
+                                   clk/wc_mode         -        0.567     0.600     0.584        0.008       ignored                  -         0.033              -
+PVT_1_80_V_BC_DELAY:hold.early     clk/bc_mode         -        0.296     0.312     0.304        0.004       ignored                  -         0.016              -
+                                   clk/typ_mode        -        0.296     0.312     0.304        0.004       ignored                  -         0.016              -
+                                   clk/wc_mode         -        0.296     0.312     0.304        0.004       ignored                  -         0.016              -
+PVT_1_80_V_BC_DELAY:hold.late      clk/bc_mode         -        0.375     0.396     0.386        0.005       ignored                  -         0.021              -
+                                   clk/typ_mode        -        0.375     0.396     0.386        0.005       ignored                  -         0.021              -
+                                   clk/wc_mode         -        0.375     0.396     0.386        0.005       ignored                  -         0.021              -
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+---------------------------------------------------------------------------------------
+Timing Corner                      Skew Group      Min ID    PathID    Max ID    PathID
+---------------------------------------------------------------------------------------
+PVT_1_80_V_WC_DELAY:setup.early    clk/bc_mode     0.784        1      0.831        2
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/typ_mode    0.784       13      0.831       14
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/wc_mode     0.784       25      0.831       26
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+PVT_1_80_V_WC_DELAY:setup.late     clk/bc_mode     1.003        3      1.063        4
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/typ_mode    1.003       15      1.063       16
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/wc_mode     1.003       27      1.063       28
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+PVT_1_80_V_TYP_DELAY:both.early    clk/bc_mode     0.441        5      0.467        6
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/typ_mode    0.441       17      0.467       18
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/wc_mode     0.441       29      0.467       30
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+PVT_1_80_V_TYP_DELAY:both.late     clk/bc_mode     0.567        7      0.600        8
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/typ_mode    0.567       19      0.600       20
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/wc_mode     0.567       31      0.600       32
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+PVT_1_80_V_BC_DELAY:hold.early     clk/bc_mode     0.296        9      0.312       10
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/typ_mode    0.296       21      0.312       22
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/wc_mode     0.296       33      0.312       34
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+PVT_1_80_V_BC_DELAY:hold.late      clk/bc_mode     0.375       11      0.396       12
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/typ_mode    0.375       23      0.396       24
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+                                   clk/wc_mode     0.375       35      0.396       36
+-    min mem_inst/registers_reg[27][3]/C
+-    max mem_inst/DAC_out_reg[29][5]/C
+---------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.early, min clock_path:
+=========================================================================
+
+PathID    : 1
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     : 0.784
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.063  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.063  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.275   0.276   0.245  0.369  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.018   0.295   0.246  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.489   0.784   0.459  0.699  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.784   0.459  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.early, max clock_path:
+=========================================================================
+
+PathID    : 2
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][4]/C
+Delay     : 0.831
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.063  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.063  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.275   0.276   0.245  0.369  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.016   0.292   0.246  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.512   0.804   0.496  0.759  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][4]/C
+-     SDFRRQHDX1  rise   0.027   0.831   0.497  -      (49.950,22.260)    131.860   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.late, min clock_path:
+========================================================================
+
+PathID    : 3
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     : 1.003
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.247  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.002   0.002   0.247  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.389   0.391   0.325  0.369  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.026   0.416   0.327  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.586   1.003   0.576  0.699  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   1.003   0.576  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.late, max clock_path:
+========================================================================
+
+PathID    : 4
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][5]/C
+Delay     : 1.063
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.247  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.002   0.002   0.247  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.389   0.391   0.325  0.369  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.022   0.412   0.327  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.617   1.029   0.623  0.759  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][5]/C
+-     SDFRRQHDX1  rise   0.034   1.063   0.625  -      (49.170,16.940)    137.960   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.early, min clock_path:
+=========================================================================
+
+PathID    : 5
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     : 0.441
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.035  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.035  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.157   0.158   0.145  0.348  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.010   0.167   0.145  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.274   0.441   0.261  0.635  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.441   0.261  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.early, max clock_path:
+=========================================================================
+
+PathID    : 6
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][5]/C
+Delay     : 0.467
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.035  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.035  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.157   0.158   0.145  0.348  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.008   0.166   0.145  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.288   0.454   0.282  0.690  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][5]/C
+-     SDFRRQHDX1  rise   0.013   0.467   0.283  -      (49.170,16.940)    137.960   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.late, min clock_path:
+========================================================================
+
+PathID    : 7
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     : 0.567
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.145  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.145  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.220   0.222   0.193  0.348  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.014   0.235   0.194  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.331   0.567   0.332  0.635  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.567   0.332  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.late, max clock_path:
+========================================================================
+
+PathID    : 8
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][5]/C
+Delay     : 0.600
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.145  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.145  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.220   0.222   0.193  0.348  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.012   0.233   0.194  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.349   0.583   0.359  0.690  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][5]/C
+-     SDFRRQHDX1  rise   0.017   0.600   0.360  -      (49.170,16.940)    137.960   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.early, min clock_path:
+========================================================================
+
+PathID    : 9
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     : 0.296
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.024  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.024  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.108   0.109   0.102  0.335  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.006   0.115   0.102  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.181   0.296   0.177  0.590  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.296   0.177  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.early, max clock_path:
+========================================================================
+
+PathID    : 10
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[28][5]/C
+Delay     :  0.312
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.024  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.024  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.108   0.109   0.102  0.335  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.005   0.114   0.102  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.191   0.304   0.192  0.641  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[28][5]/C
+-     SDFRRQHDX1  rise   0.007   0.312   0.192  -      (39.090,25.900)    139.080   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.late, min clock_path:
+=======================================================================
+
+PathID    : 11
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  0.375
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.102  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.102  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.148   0.148   0.135  0.335  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.008   0.157   0.135  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.218   0.375   0.226  0.590  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.375   0.226  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.late, max clock_path:
+=======================================================================
+
+PathID    : 12
+Path type : skew group clk/bc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][4]/C
+Delay     :  0.396
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.102  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.102  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.148   0.148   0.135  0.335  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.007   0.155   0.135  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.231   0.386   0.244  0.641  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][4]/C
+-     SDFRRQHDX1  rise   0.010   0.396   0.245  -      (49.950,22.260)    131.860   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.early, min clock_path:
+=========================================================================
+
+PathID    : 13
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  0.784
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.063  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.063  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.275   0.276   0.245  0.369  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.018   0.295   0.246  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.489   0.784   0.459  0.699  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.784   0.459  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.early, max clock_path:
+=========================================================================
+
+PathID    : 14
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][4]/C
+Delay     :  0.831
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.063  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.063  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.275   0.276   0.245  0.369  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.016   0.292   0.246  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.512   0.804   0.496  0.759  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][4]/C
+-     SDFRRQHDX1  rise   0.027   0.831   0.497  -      (49.950,22.260)    131.860   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.late, min clock_path:
+========================================================================
+
+PathID    : 15
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  1.003
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.247  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.002   0.002   0.247  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.389   0.391   0.325  0.369  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.026   0.416   0.327  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.586   1.003   0.576  0.699  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   1.003   0.576  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.late, max clock_path:
+========================================================================
+
+PathID    : 16
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][5]/C
+Delay     :  1.063
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.247  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.002   0.002   0.247  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.389   0.391   0.325  0.369  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.022   0.412   0.327  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.617   1.029   0.623  0.759  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][5]/C
+-     SDFRRQHDX1  rise   0.034   1.063   0.625  -      (49.170,16.940)    137.960   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.early, min clock_path:
+=========================================================================
+
+PathID    : 17
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  0.441
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.035  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.035  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.157   0.158   0.145  0.348  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.010   0.167   0.145  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.274   0.441   0.261  0.635  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.441   0.261  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.early, max clock_path:
+=========================================================================
+
+PathID    : 18
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][5]/C
+Delay     :  0.467
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.035  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.035  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.157   0.158   0.145  0.348  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.008   0.166   0.145  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.288   0.454   0.282  0.690  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][5]/C
+-     SDFRRQHDX1  rise   0.013   0.467   0.283  -      (49.170,16.940)    137.960   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.late, min clock_path:
+========================================================================
+
+PathID    : 19
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  0.567
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.145  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.145  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.220   0.222   0.193  0.348  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.014   0.235   0.194  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.331   0.567   0.332  0.635  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.567   0.332  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.late, max clock_path:
+========================================================================
+
+PathID    : 20
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][5]/C
+Delay     :  0.600
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.145  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.145  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.220   0.222   0.193  0.348  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.012   0.233   0.194  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.349   0.583   0.359  0.690  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][5]/C
+-     SDFRRQHDX1  rise   0.017   0.600   0.360  -      (49.170,16.940)    137.960   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.early, min clock_path:
+========================================================================
+
+PathID    : 21
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  0.296
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.024  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.024  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.108   0.109   0.102  0.335  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.006   0.115   0.102  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.181   0.296   0.177  0.590  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.296   0.177  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.early, max clock_path:
+========================================================================
+
+PathID    : 22
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[28][5]/C
+Delay     :  0.312
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.024  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.024  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.108   0.109   0.102  0.335  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.005   0.114   0.102  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.191   0.304   0.192  0.641  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[28][5]/C
+-     SDFRRQHDX1  rise   0.007   0.312   0.192  -      (39.090,25.900)    139.080   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.late, min clock_path:
+=======================================================================
+
+PathID    : 23
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  0.375
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.102  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.102  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.148   0.148   0.135  0.335  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.008   0.157   0.135  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.218   0.375   0.226  0.590  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.375   0.226  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.late, max clock_path:
+=======================================================================
+
+PathID    : 24
+Path type : skew group clk/typ_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][4]/C
+Delay     :  0.396
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.102  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.102  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.148   0.148   0.135  0.335  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.007   0.155   0.135  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.231   0.386   0.244  0.641  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][4]/C
+-     SDFRRQHDX1  rise   0.010   0.396   0.245  -      (49.950,22.260)    131.860   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.early, min clock_path:
+=========================================================================
+
+PathID    : 25
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  0.784
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.063  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.063  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.275   0.276   0.245  0.369  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.018   0.295   0.246  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.489   0.784   0.459  0.699  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.784   0.459  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.early, max clock_path:
+=========================================================================
+
+PathID    : 26
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][4]/C
+Delay     :  0.831
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.063  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.063  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.275   0.276   0.245  0.369  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.016   0.292   0.246  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.512   0.804   0.496  0.759  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][4]/C
+-     SDFRRQHDX1  rise   0.027   0.831   0.497  -      (49.950,22.260)    131.860   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.late, min clock_path:
+========================================================================
+
+PathID    : 27
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  1.003
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.247  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.002   0.002   0.247  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.389   0.391   0.325  0.369  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.026   0.416   0.327  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.586   1.003   0.576  0.699  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   1.003   0.576  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_WC_DELAY:setup.late, max clock_path:
+========================================================================
+
+PathID    : 28
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][5]/C
+Delay     :  1.063
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.247  0.047  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.002   0.002   0.247  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.389   0.391   0.325  0.369  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.022   0.412   0.327  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.617   1.029   0.623  0.759  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][5]/C
+-     SDFRRQHDX1  rise   0.034   1.063   0.625  -      (49.170,16.940)    137.960   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.early, min clock_path:
+=========================================================================
+
+PathID    : 29
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  0.441
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.035  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.035  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.157   0.158   0.145  0.348  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.010   0.167   0.145  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.274   0.441   0.261  0.635  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.441   0.261  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.early, max clock_path:
+=========================================================================
+
+PathID    : 30
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][5]/C
+Delay     :  0.467
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.035  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.035  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.157   0.158   0.145  0.348  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.008   0.166   0.145  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.288   0.454   0.282  0.690  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][5]/C
+-     SDFRRQHDX1  rise   0.013   0.467   0.283  -      (49.170,16.940)    137.960   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.late, min clock_path:
+========================================================================
+
+PathID    : 31
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  0.567
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.145  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.145  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.220   0.222   0.193  0.348  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.014   0.235   0.194  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.331   0.567   0.332  0.635  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.567   0.332  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_TYP_DELAY:both.late, max clock_path:
+========================================================================
+
+PathID    : 32
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][5]/C
+Delay     :  0.600
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.145  0.044  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.145  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.220   0.222   0.193  0.348  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.012   0.233   0.194  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.349   0.583   0.359  0.690  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][5]/C
+-     SDFRRQHDX1  rise   0.017   0.600   0.360  -      (49.170,16.940)    137.960   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.early, min clock_path:
+========================================================================
+
+PathID    : 33
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  0.296
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.024  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.024  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.108   0.109   0.102  0.335  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.006   0.115   0.102  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.181   0.296   0.177  0.590  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.296   0.177  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.early, max clock_path:
+========================================================================
+
+PathID    : 34
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[28][5]/C
+Delay     :  0.312
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.024  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.000   0.000   0.024  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.108   0.109   0.102  0.335  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.005   0.114   0.102  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.191   0.304   0.192  0.641  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[28][5]/C
+-     SDFRRQHDX1  rise   0.007   0.312   0.192  -      (39.090,25.900)    139.080   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.late, min clock_path:
+=======================================================================
+
+PathID    : 35
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/registers_reg[27][3]/C
+Delay     :  0.375
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.102  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.102  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.148   0.148   0.135  0.335  (159.210,276.700)   10.410      7    
+CTS_ccl_a_buf_00002/A
+-     BUHDX12     rise   0.008   0.157   0.135  -      (217.560,102.200)  232.850   -       
+CTS_ccl_a_buf_00002/Q
+-     BUHDX12     rise   0.218   0.375   0.226  0.590  (227.190,102.980)   10.410     91    
+mem_inst/registers_reg[27][3]/C
+-     SDFRRQHDX1  rise   0.000   0.375   0.226  -      (226.350,106.540)    4.400   -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner PVT_1_80_V_BC_DELAY:hold.late, max clock_path:
+=======================================================================
+
+PathID    : 36
+Path type : skew group clk/wc_mode (path 1 of 1)
+Start     : clk
+End       : mem_inst/DAC_out_reg[29][4]/C
+Delay     :  0.396
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell    Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                         (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -           rise   -       0.000   0.102  0.043  (168.840,312.480)  -            1    
+CTS_ccl_a_buf_00008/A
+-     BUHDX12     rise   0.001   0.001   0.102  -      (168.840,277.480)   35.000   -       
+CTS_ccl_a_buf_00008/Q
+-     BUHDX12     rise   0.148   0.148   0.135  0.335  (159.210,276.700)   10.410      7    
+mem_inst/CTS_ccl_a_buf_00003/A
+-     BUHDX12     rise   0.007   0.155   0.135  -      (80.360,134.120)   221.430   -       
+mem_inst/CTS_ccl_a_buf_00003/Q
+-     BUHDX12     rise   0.231   0.386   0.244  0.641  (70.730,133.340)    10.410     99    
+mem_inst/DAC_out_reg[29][4]/C
+-     SDFRRQHDX1  rise   0.010   0.396   0.245  -      (49.950,22.260)    131.860   -       
+--------------------------------------------------------------------------------------------------
+
+

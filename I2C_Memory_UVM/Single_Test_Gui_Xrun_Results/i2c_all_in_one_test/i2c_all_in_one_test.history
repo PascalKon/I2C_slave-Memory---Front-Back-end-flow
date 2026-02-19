@@ -1,0 +1,1 @@
+s1(04Feb2026:15:34:13):  xrun -gui -f run.args -coverage all +VERBOSITY=UVM_NONE +UVM_TESTNAME=i2c_all_in_one_test -l Single_Test_Gui_Xrun_Results/i2c_all_in_one_test/i2c_all_in_one_test.log +DUMPNAME=Single_Test_Gui_Xrun_Results/i2c_all_in_one_test/i2c_all_in_one_test.vcd -covtest i2c_all_in_one_test 

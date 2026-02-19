@@ -1,0 +1,15 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++NoArgsToLog
+-SYSV
+-COVERAGE
+all
+-COVOVERWRITE
+-COVERAGE
+all
+-COVTEST
+MT_i2c_adc_test
+-COVOVERWRITE
+-UPDATE

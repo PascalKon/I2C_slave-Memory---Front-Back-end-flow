@@ -1,0 +1,36 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.23.03.d
+-RUNMODE
+-UVMNOSINGLESTEP
+-define
+UVM_PLI
+src/top.sv
+-INCDIR
+src/
+-INCDIR
+src/agents
+-INCDIR
+src/env
+-INCDIR
+src/tests
+-CDSLIB
+./xcelium.d/run.lnx8664.23.03.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.23.03.d/hdlrun.var
+-I_INCDIR
+/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/additions/sv
+-no_analogsolver
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.23.03.d/xllibs
+-ALLOWUNBOUND
+-ENABLEOIGW

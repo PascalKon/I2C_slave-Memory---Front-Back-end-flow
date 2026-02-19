@@ -1,0 +1,5 @@
+    Hinst Name       Module Name          Inst Count           Total Area
+----------------------------------------------------------------------
+I2CAndMemory                                    1863            57155.482
+ i2c_inst            I2C_Slave                   214             5210.778
+ mem_inst            Memory                     1644            51809.229

@@ -1,0 +1,1 @@
+s1(05Feb2026:02:01:08):  xrun -batch -f run.args -coverage all +VERBOSITY=UVM_NONE +UVM_TESTNAME=i2c_spec_addr_reg_order_no_adc_test -l Multiple_Tests_xrun_Results/i2c_spec_addr_reg_order_no_adc_test_1.log +DUMPNAME=Multiple_Tests_xrun_Results/i2c_spec_addr_reg_order_no_adc_test_1.vcd -covtest MT_i2c_spec_addr_reg_order_no_adc_test -covoverwrite 

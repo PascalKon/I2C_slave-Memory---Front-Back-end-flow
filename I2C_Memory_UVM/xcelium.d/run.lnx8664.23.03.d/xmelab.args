@@ -1,0 +1,33 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++VERBOSITY=UVM_LOW
++asssertreport
++assertmonitor
++assertcount
++VERBOSITY=UVM_NONE
++DUMPNAME=Multiple_Tests_xrun_Results/i2c_adc_test_1.vcd
+-loadpli
+/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/additions/sv/lib/64bit/libuvmpli.so:uvm_pli_boot
+-ACCESS
++rw
+-timescale
+1ns/1ns
+-COVERAGE
+all
+-COVERAGE
+all
++UVM_TESTNAME=i2c_adc_test
+-no_analogsolver
+-MESSAGES
+-XLMODE
+./xcelium.d/run.lnx8664.23.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.23.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.23.03.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

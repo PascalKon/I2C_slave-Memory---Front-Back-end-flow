@@ -1,0 +1,399 @@
+TOOL:	xrun(64)	23.03-s007: Started on Feb 04, 2026 at 20:47:00 EET
+xrun
+	-gui
+	-f run.args
+		src/top.sv
+		-incdir src/
+		-incdir src/agents
+		-incdir src/env
+		-incdir src/tests
+		-sysv
+		-access +rw
+		-uvm
+		-uvmhome CDNS-1.2
+		-clean
+		-timescale 1ns/1ns
+		-seed 1
+		+VERBOSITY=UVM_LOW
+		-coverage all
+		-covoverwrite
+		+asssertreport
+		+assertmonitor
+		+assertcount
+	-coverage all
+	+VERBOSITY=UVM_NONE
+	+UVM_TESTNAME=i2c_invalid_adc_write_test
+	-l Single_Test_Gui_Xrun_Results/i2c_invalid_adc_write_test/i2c_invalid_adc_write_test.log
+	+DUMPNAME=Single_Test_Gui_Xrun_Results/i2c_invalid_adc_write_test/i2c_invalid_adc_write_test.vcd
+	-covtest i2c_invalid_adc_write_test
+
+   User defined plus("+") options:
+	+VERBOSITY=UVM_LOW
+	+asssertreport
+	+assertmonitor
+	+assertcount
+	+VERBOSITY=UVM_NONE
+	+DUMPNAME=Single_Test_Gui_Xrun_Results/i2c_invalid_adc_write_test/i2c_invalid_adc_write_test.vcd
+
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2
+file: src/top.sv
+	interface worklib.i2c_if:sv
+		errors: 0, warnings: 0
+	package worklib.i2c_pkg:sv
+		errors: 0, warnings: 0
+	package worklib.i2c_env_pkg:sv
+		errors: 0, warnings: 0
+	module worklib.I2CAndMemory:sv
+		errors: 0, warnings: 0
+	module worklib.I2C_Slave:sv
+		errors: 0, warnings: 0
+	module worklib.Memory:sv
+		errors: 0, warnings: 0
+	module worklib.register_file_assertions:sv
+		errors: 0, warnings: 0
+	module worklib.top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x236c8600
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		i2c_pkg
+		i2c_env_pkg
+		top
+		Caching library 'worklib' ....... Done
+
+	Extracting FSMs for coverage:
+		worklib.I2C_Slave
+			FSM extracted for state register state
+		worklib.register_file_assertions
+		worklib.Memory
+		worklib.I2CAndMemory
+		worklib.top
+	Total FSMs extracted = 1
+	Building instance overlay tables: ..................
+xmelab: *W,COVFDP: FSM description matching across instance of a module for "COVFDM" warning has been moved from elaboration to simulation dumping. To restore old matching behavior, use "set_backward_compat -COVFDM_during_elab". Also, it is recommended to use set_parameterized_module_coverage CCF command to avoid coverage loss due to FSM description difference across instances of a module.
+xmelab: *W,COVFHT: FSM hold transitions (transitions to the current state) are not extracted for any FSM in default mode.
+.. Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.register_file_assertions:sv <0x6e37a94b>
+			streams:  19, words: 17790
+		worklib.I2C_Slave:sv <0x59d55372>
+			streams:  22, words: 34578
+		worklib.I2CAndMemory:sv <0x71e29606>
+			streams:  17, words:  9547
+		worklib.top:sv <0x001b1224>
+			streams: 2120, words: 2778749
+		worklib.cdns_uvm_pkg:sv <0x6a413aa5>
+			streams: 249, words: 394356
+		worklib.cdns_uvmapi:svp <0x27861fe7>
+			streams:  27, words: 30300
+		worklib.cdns_assert2uvm_pkg:sv <0x2e8ab3f6>
+			streams:   3, words:  1804
+		worklib.uvm_pkg:sv <0x69fe6466>
+			streams: 5943, words: 9094584
+		worklib.Memory:sv <0x3de09bb3>
+			streams:  29, words: 25069
+		worklib.i2c_if:sv <0x35766382>
+			streams:   7, words:  3205
+  logic[7:0] uvc_ADC_out[0:2];        // ADC outputs driven by UVC (testbench side)
+                       |
+xmelab: *W,COVMDD (./src/i2c_if.sv,5|23): Toggle coverage for bit, logic, reg, wire, enum and struct multi-dimensional static arrays and vectors is not supported by default. To enable toggle coverage for enum multi-dimensional static arrays specify 'set_toggle_scoring -sv_enum enable_mda' and for other multi-dimensional static arrays, specify 'set_toggle_scoring -sv_mda [<max_bit_base2_exponent>] [-sv_mda_of_struct]' ccf command in the coverage configuration file.
+  int counter;      //counter → tracks bits within one byte (0–8 → 8 bits + ACK).
+            |
+xmelab: *W,COVUTA (./src/i2c_if.sv,36|12): Toggle coverage is not supported for SystemVerilog integer, real, string, dynamic array, sparse memory and reference ports. It is also not supported for VHDL multi-dimensional array and array of record. There may also be other such objects in the design.
+xmelab: *W,COVNOEN: By default, toggle coverage is not supported for systemverilog enumerated nets and variables. To enable toggle coverage of these objects, specify the 'set_toggle_scoring -sv_enum' command in the coverage configuration file.
+	Building instance specific data structures.
+xmelab: *W,CGPIDF: Covergroup "per_instance" option , by default, is set as 0.
+xmelab: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       5       5
+		Interfaces:                    2       1
+		Verilog packages:              6       6
+		Registers:                 19627   12749
+		Scalar wires:                 30       -
+		Vectored wires:               33       -
+		Named events:                  7      15
+		Always blocks:                28      24
+		Initial blocks:              471     215
+		Parallel blocks:              43      45
+		Cont. assignments:            12      14
+		Pseudo assignments:           32       -
+		Assertions:                    6       6
+		Covergroup Instances:          0       1
+		Compilation units:             1       1
+		SV Class declarations:       275     392
+		SV Class specializations:    547     547
+		Simulation timescale:        1ns
+	Writing initial simulation snapshot: worklib.top:sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+SVSEED set from command line: 1
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/xcelium/files/xmsimrc
+xcelium> source /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm top.dut.ADC_in top.dut.A_0 top.dut.A_1 top.dut.A_2 top.dut.Amp_EN top.dut.CP_reset top.dut.CS_control top.dut.DAC_out top.dut.SCL top.dut.SDA top.dut.Timer_EN top.dut.Timer_FEN top.dut.clk top.dut.i2c_to_mem_data top.dut.mem_to_i2c_data top.dut.reg_addr top.dut.reg_read top.dut.reg_write top.dut.rst_n top.i2c_vif_master.ADC_out top.i2c_vif_master.counter top.i2c_vif_master.full_counter top.i2c_vif_master.reset_n top.i2c_vif_master.scl top.i2c_vif_master.sda top.i2c_vif_master.system_clock top.i2c_vif_master.uvc_ADC_out top.i2c_vif_master.uvc_scl top.i2c_vif_master.uvc_sda top.i2c_vif_master.uvc_selec_address
+Created probe 1
+xcelium> run
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (23.03-s007)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test i2c_invalid_adc_write_test...
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_bits_to_string.str" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_bits_to_string.str' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.cdns_uvm_pkg::_temp" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.cdns_uvm_pkg::_temp' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.cdns_uvm_pkg::_temp2" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.cdns_uvm_pkg::_temp2' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+stop -create -name Randomize -randomize
+Created stop Randomize
+
+UVM_INFO src/agents/i2c_agent.sv(32) @ 0: uvm_test_top.env.master_agent [build_phase_i2c_agent] i2c_if was set through config db
+UVM_INFO src/agents/i2c_agent.sv(38) @ 0: uvm_test_top.env.master_agent [build_phase_master_agent] Master driver and sequencer created.
+UVM_INFO src/agents/i2c_monitor.sv(40) @ 0: uvm_test_top.env.master_agent.m_mon [build_phase] BUILD i2c_MONITOR
+UVM_INFO src/agents/i2c_master_sequencer.sv(23) @ 0: uvm_test_top.env.master_agent.m_seqr [build_phase] CFG is set through config db
+UVM_INFO src/agents/i2c_agent.sv(32) @ 0: uvm_test_top.env.slave_agent [build_phase_i2c_agent] i2c_if was set through config db
+UVM_INFO src/agents/i2c_monitor.sv(40) @ 0: uvm_test_top.env.slave_agent.m_mon [build_phase] BUILD i2c_MONITOR
+UVM_INFO src/env/i2c_virtual_sequencer.sv(27) @ 0: uvm_test_top.env.v_seqr [build_phase] CFG is set through config db
+UVM_INFO src/agents/i2c_agent.sv(55) @ 0: uvm_test_top.env.master_agent [connect_phase_i2c_agent] master driver connected.
+UVM_INFO src/tests/i2c_base_test.sv(73) @ 0: uvm_test_top [end_of_elaboration_phase] Verbosity is set to UVM_LOW.
+UVM_INFO src/tests/i2c_base_test.sv(83) @ 0: uvm_test_top [start_of_simulation_phase] Printing topology
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(605) @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------------
+Name                           Type                        Size  Value
+----------------------------------------------------------------------
+uvm_test_top                   i2c_invalid_adc_write_test  -     @2135
+  env                          i2c_env                     -     @2231
+    cov                        i2c_coverage                -     @2446
+    master_agent               i2c_agent                   -     @2350
+      m_drv                    i2c_master_driver           -     @3142
+        rsp_port               uvm_analysis_port           -     @3245
+        seq_item_port          uvm_seq_item_pull_port      -     @3193
+      m_mon                    i2c_monitor                 -     @3934
+        i2c_mon_analysis_port  uvm_analysis_port           -     @3994
+      m_seqr                   i2c_master_sequencer        -     @3278
+        rsp_export             uvm_analysis_export         -     @3337
+        seq_item_export        uvm_seq_item_pull_imp       -     @3897
+        arbitration_queue      array                       0     -    
+        lock_queue             array                       0     -    
+        num_last_reqs          integral                    32    'd1  
+        num_last_rsps          integral                    32    'd1  
+    sb                         i2c_scoreboard              -     @2414
+      m_mon_imp                uvm_analysis_imp_m_mon      -     @4070
+      s_mon_imp                uvm_analysis_imp_s_mon      -     @4120
+    slave_agent                i2c_agent                   -     @2383
+      m_mon                    i2c_monitor                 -     @4039
+        i2c_mon_analysis_port  uvm_analysis_port           -     @4204
+    v_seqr                     i2c_virtual_sequencer       -     @2478
+      rsp_export               uvm_analysis_export         -     @2539
+      seq_item_export          uvm_seq_item_pull_imp       -     @3101
+      arbitration_queue        array                       0     -    
+      lock_queue               array                       0     -    
+      num_last_reqs            integral                    32    'd1  
+      num_last_rsps            integral                    32    'd1  
+----------------------------------------------------------------------
+
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 2000000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_catcher.svh(705) @ 2000000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(847) @ 2000000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+Quit count :     0 of    20
+** Report counts by severity
+UVM_INFO :   15
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+[build_phase]     4
+[build_phase_i2c_agent]     2
+[build_phase_master_agent]     1
+[connect_phase_i2c_agent]     1
+[end_of_elaboration_phase]     1
+[start_of_simulation_phase]     1
+
+Simulation complete via $finish(1) at time 2 MS + 59
+/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
+xcelium> reset
+xmsim: *W,C58RST: Reset command executed. Coverage is enabled for the subsequent simulation run.  The coverage test name needs to be changed to prevent data overwrite, and any coverage control commands previously used must be reissued.
+SVSEED set from command line: 1
+xmsim: *W,SCPINV: Dynamic scope `uvm_pkg::uvm_root@1225_1.run_test' no longer valid - traversing to last valid scope `top'.
+Loaded snapshot worklib.top:sv
+xcelium> run
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (23.03-s007)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test i2c_invalid_adc_write_test...
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_bits_to_string.str" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_bits_to_string.str' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.cdns_uvm_pkg::_temp" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.cdns_uvm_pkg::_temp' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.cdns_uvm_pkg::_temp2" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.cdns_uvm_pkg::_temp2' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+UVM_INFO src/agents/i2c_agent.sv(32) @ 0: uvm_test_top.env.master_agent [build_phase_i2c_agent] i2c_if was set through config db
+UVM_INFO src/agents/i2c_agent.sv(38) @ 0: uvm_test_top.env.master_agent [build_phase_master_agent] Master driver and sequencer created.
+UVM_INFO src/agents/i2c_monitor.sv(40) @ 0: uvm_test_top.env.master_agent.m_mon [build_phase] BUILD i2c_MONITOR
+UVM_INFO src/agents/i2c_master_sequencer.sv(23) @ 0: uvm_test_top.env.master_agent.m_seqr [build_phase] CFG is set through config db
+UVM_INFO src/agents/i2c_agent.sv(32) @ 0: uvm_test_top.env.slave_agent [build_phase_i2c_agent] i2c_if was set through config db
+UVM_INFO src/agents/i2c_monitor.sv(40) @ 0: uvm_test_top.env.slave_agent.m_mon [build_phase] BUILD i2c_MONITOR
+UVM_INFO src/env/i2c_virtual_sequencer.sv(27) @ 0: uvm_test_top.env.v_seqr [build_phase] CFG is set through config db
+UVM_INFO src/agents/i2c_agent.sv(55) @ 0: uvm_test_top.env.master_agent [connect_phase_i2c_agent] master driver connected.
+UVM_INFO src/tests/i2c_base_test.sv(73) @ 0: uvm_test_top [end_of_elaboration_phase] Verbosity is set to UVM_LOW.
+UVM_INFO src/tests/i2c_base_test.sv(83) @ 0: uvm_test_top [start_of_simulation_phase] Printing topology
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(605) @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------------
+Name                           Type                        Size  Value
+----------------------------------------------------------------------
+uvm_test_top                   i2c_invalid_adc_write_test  -     @2135
+  env                          i2c_env                     -     @2231
+    cov                        i2c_coverage                -     @2446
+    master_agent               i2c_agent                   -     @2350
+      m_drv                    i2c_master_driver           -     @3142
+        rsp_port               uvm_analysis_port           -     @3245
+        seq_item_port          uvm_seq_item_pull_port      -     @3193
+      m_mon                    i2c_monitor                 -     @3934
+        i2c_mon_analysis_port  uvm_analysis_port           -     @3994
+      m_seqr                   i2c_master_sequencer        -     @3278
+        rsp_export             uvm_analysis_export         -     @3337
+        seq_item_export        uvm_seq_item_pull_imp       -     @3897
+        arbitration_queue      array                       0     -    
+        lock_queue             array                       0     -    
+        num_last_reqs          integral                    32    'd1  
+        num_last_rsps          integral                    32    'd1  
+    sb                         i2c_scoreboard              -     @2414
+      m_mon_imp                uvm_analysis_imp_m_mon      -     @4070
+      s_mon_imp                uvm_analysis_imp_s_mon      -     @4120
+    slave_agent                i2c_agent                   -     @2383
+      m_mon                    i2c_monitor                 -     @4039
+        i2c_mon_analysis_port  uvm_analysis_port           -     @4204
+    v_seqr                     i2c_virtual_sequencer       -     @2478
+      rsp_export               uvm_analysis_export         -     @2539
+      seq_item_export          uvm_seq_item_pull_imp       -     @3101
+      arbitration_queue        array                       0     -    
+      lock_queue               array                       0     -    
+      num_last_reqs            integral                    32    'd1  
+      num_last_rsps            integral                    32    'd1  
+----------------------------------------------------------------------
+
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 2000000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_catcher.svh(705) @ 2000000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(847) @ 2000000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+Quit count :     0 of    20
+** Report counts by severity
+UVM_INFO :   15
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+[build_phase]     4
+[build_phase_i2c_agent]     2
+[build_phase_master_agent]     1
+[connect_phase_i2c_agent]     1
+[end_of_elaboration_phase]     1
+[start_of_simulation_phase]     1
+
+Simulation complete via $finish(1) at time 2 MS + 59
+/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
+xcelium> ^C
+xcelium> exit
+xmsim: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "i2c_reg_access_cg" will not be dumped to database as per_instance option value is set to 0:./src/env/i2c_coverage.sv, 42.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "i2c_reg_access_cg" will not be dumped to database as per_instance option value is set to 0:./src/env/i2c_coverage.sv, 42.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "i2c_reg_access_cg" will not be dumped to database as per_instance option value is set to 0:./src/env/i2c_coverage.sv, 42.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  test_sv1
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_0bd69bd5_02ce4ba3.ucm (reused)
+  data               :  ./cov_work/scope/test_sv1/icc_0bd69bd5_02ce4ba3.ucd
+TOOL:	xrun(64)	23.03-s007: Exiting on Feb 04, 2026 at 20:50:43 EET  (total: 00:03:43)

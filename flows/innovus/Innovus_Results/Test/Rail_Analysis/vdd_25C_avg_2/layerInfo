@@ -1,0 +1,21 @@
+
+REDUCED
+
+CSUBSTRATE
+active*
+POLY1*
+CONT*2
+MET1"MET1*2
+VIA1"VIA1*2
+MET2"MET2*2
+VIA2"VIA2*	2
+	MET3"MET3*
+2
+
+VIA3"VIA3*2	
+MET4"MET4*2
+
+VIATP"VIATP*2
+METTP"METTP*2
+VIATPL"VIATPL*2
+METTPL"METTPL2

@@ -1,0 +1,18 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INCDIR
+src/
+-INCDIR
+src/agents
+-INCDIR
+src/env
+-INCDIR
+src/tests
+-I_INCDIR
+/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/additions/sv

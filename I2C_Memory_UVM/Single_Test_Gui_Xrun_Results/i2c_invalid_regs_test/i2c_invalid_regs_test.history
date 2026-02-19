@@ -1,0 +1,1 @@
+s1(04Feb2026:21:08:20):  xrun -gui -f run.args -coverage all +VERBOSITY=UVM_NONE +UVM_TESTNAME=i2c_invalid_regs_test -l Single_Test_Gui_Xrun_Results/i2c_invalid_regs_test/i2c_invalid_regs_test.log +DUMPNAME=Single_Test_Gui_Xrun_Results/i2c_invalid_regs_test/i2c_invalid_regs_test.vcd -covtest i2c_invalid_regs_test 

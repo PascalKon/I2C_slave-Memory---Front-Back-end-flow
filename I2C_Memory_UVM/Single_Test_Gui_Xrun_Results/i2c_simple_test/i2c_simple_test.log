@@ -1,0 +1,906 @@
+xrun(64): 23.03-s007: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	23.03-s007: Started on Feb 04, 2026 at 15:36:34 EET
+xrun
+	-gui
+	-f run.args
+		src/top.sv
+		-incdir src/
+		-incdir src/agents
+		-incdir src/env
+		-incdir src/tests
+		-sysv
+		-access +rw
+		-uvm
+		-uvmhome CDNS-1.2
+		-clean
+		-timescale 1ns/1ns
+		-seed 1
+		+VERBOSITY=UVM_LOW
+		-coverage all
+		-covoverwrite
+		+asssertreport
+		+assertmonitor
+		+assertcount
+	-coverage all
+	+VERBOSITY=UVM_NONE
+	+UVM_TESTNAME=i2c_simple_test
+	-l Single_Test_Gui_Xrun_Results/i2c_simple_test/i2c_simple_test.log
+	+DUMPNAME=Single_Test_Gui_Xrun_Results/i2c_simple_test/i2c_simple_test.vcd
+	-covtest i2c_simple_test
+
+   User defined plus("+") options:
+	+VERBOSITY=UVM_LOW
+	+asssertreport
+	+assertmonitor
+	+assertcount
+	+VERBOSITY=UVM_NONE
+	+DUMPNAME=Single_Test_Gui_Xrun_Results/i2c_simple_test/i2c_simple_test.vcd
+
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2
+file: src/top.sv
+	interface worklib.i2c_if:sv
+		errors: 0, warnings: 0
+	package worklib.i2c_pkg:sv
+		errors: 0, warnings: 0
+	package worklib.i2c_env_pkg:sv
+		errors: 0, warnings: 0
+	module worklib.I2CAndMemory:sv
+		errors: 0, warnings: 0
+	module worklib.I2C_Slave:sv
+		errors: 0, warnings: 0
+	module worklib.Memory:sv
+		errors: 0, warnings: 0
+	module worklib.register_file_assertions:sv
+		errors: 0, warnings: 0
+	module worklib.top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x236c8600
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		i2c_pkg
+		i2c_env_pkg
+		top
+		Caching library 'worklib' ....... Done
+
+	Extracting FSMs for coverage:
+		worklib.I2C_Slave
+			FSM extracted for state register state
+		worklib.register_file_assertions
+		worklib.Memory
+		worklib.I2CAndMemory
+		worklib.top
+	Total FSMs extracted = 1
+	Building instance overlay tables: ..................
+xmelab: *W,COVFDP: FSM description matching across instance of a module for "COVFDM" warning has been moved from elaboration to simulation dumping. To restore old matching behavior, use "set_backward_compat -COVFDM_during_elab". Also, it is recommended to use set_parameterized_module_coverage CCF command to avoid coverage loss due to FSM description difference across instances of a module.
+xmelab: *W,COVFHT: FSM hold transitions (transitions to the current state) are not extracted for any FSM in default mode.
+.. Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.register_file_assertions:sv <0x6e37a94b>
+			streams:  19, words: 17790
+		worklib.I2C_Slave:sv <0x59d55372>
+			streams:  22, words: 34578
+		worklib.I2CAndMemory:sv <0x71e29606>
+			streams:  17, words:  9547
+		worklib.top:sv <0x001b1224>
+			streams: 2120, words: 2778749
+		worklib.cdns_uvm_pkg:sv <0x6a413aa5>
+			streams: 249, words: 394356
+		worklib.cdns_uvmapi:svp <0x27861fe7>
+			streams:  27, words: 30300
+		worklib.cdns_assert2uvm_pkg:sv <0x2e8ab3f6>
+			streams:   3, words:  1804
+		worklib.uvm_pkg:sv <0x69fe6466>
+			streams: 5943, words: 9094584
+		worklib.Memory:sv <0x3de09bb3>
+			streams:  29, words: 25069
+		worklib.i2c_if:sv <0x35766382>
+			streams:   7, words:  3205
+  logic[7:0] uvc_ADC_out[0:2];        // ADC outputs driven by UVC (testbench side)
+                       |
+xmelab: *W,COVMDD (./src/i2c_if.sv,5|23): Toggle coverage for bit, logic, reg, wire, enum and struct multi-dimensional static arrays and vectors is not supported by default. To enable toggle coverage for enum multi-dimensional static arrays specify 'set_toggle_scoring -sv_enum enable_mda' and for other multi-dimensional static arrays, specify 'set_toggle_scoring -sv_mda [<max_bit_base2_exponent>] [-sv_mda_of_struct]' ccf command in the coverage configuration file.
+  int counter;      //counter → tracks bits within one byte (0–8 → 8 bits + ACK).
+            |
+xmelab: *W,COVUTA (./src/i2c_if.sv,36|12): Toggle coverage is not supported for SystemVerilog integer, real, string, dynamic array, sparse memory and reference ports. It is also not supported for VHDL multi-dimensional array and array of record. There may also be other such objects in the design.
+xmelab: *W,COVNOEN: By default, toggle coverage is not supported for systemverilog enumerated nets and variables. To enable toggle coverage of these objects, specify the 'set_toggle_scoring -sv_enum' command in the coverage configuration file.
+	Building instance specific data structures.
+xmelab: *W,CGPIDF: Covergroup "per_instance" option , by default, is set as 0.
+xmelab: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       5       5
+		Interfaces:                    2       1
+		Verilog packages:              6       6
+		Registers:                 19627   12749
+		Scalar wires:                 30       -
+		Vectored wires:               33       -
+		Named events:                  7      15
+		Always blocks:                28      24
+		Initial blocks:              471     215
+		Parallel blocks:              43      45
+		Cont. assignments:            12      14
+		Pseudo assignments:           32       -
+		Assertions:                    6       6
+		Covergroup Instances:          0       1
+		Compilation units:             1       1
+		SV Class declarations:       275     392
+		SV Class specializations:    547     547
+		Simulation timescale:        1ns
+	Writing initial simulation snapshot: worklib.top:sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+SVSEED set from command line: 1
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/xcelium/files/xmsimrc
+xcelium> source /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm top.dut.ADC_in top.dut.A_0 top.dut.A_1 top.dut.A_2 top.dut.Amp_EN top.dut.CP_reset top.dut.CS_control top.dut.DAC_out top.dut.SCL top.dut.SDA top.dut.Timer_EN top.dut.Timer_FEN top.dut.clk top.dut.i2c_to_mem_data top.dut.mem_to_i2c_data top.dut.reg_addr top.dut.reg_read top.dut.reg_write top.dut.rst_n top.i2c_vif_master.ADC_out top.i2c_vif_master.counter top.i2c_vif_master.full_counter top.i2c_vif_master.reset_n top.i2c_vif_master.scl top.i2c_vif_master.sda top.i2c_vif_master.system_clock top.i2c_vif_master.uvc_ADC_out top.i2c_vif_master.uvc_scl top.i2c_vif_master.uvc_sda top.i2c_vif_master.uvc_selec_address
+Created probe 1
+xcelium> reset
+xmsim: *W,C58RST: Reset command executed. Coverage is enabled for the subsequent simulation run.  The coverage test name needs to be changed to prevent data overwrite, and any coverage control commands previously used must be reissued.
+SVSEED set from command line: 1
+Loaded snapshot worklib.top:sv
+xcelium> run
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (23.03-s007)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test i2c_simple_test...
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_bits_to_string.str" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_bits_to_string.str' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.cdns_uvm_pkg::_temp" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.cdns_uvm_pkg::_temp' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.cdns_uvm_pkg::_temp2" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.cdns_uvm_pkg::_temp2' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+stop -create -name Randomize -randomize
+Created stop Randomize
+
+UVM_INFO src/agents/i2c_agent.sv(32) @ 0: uvm_test_top.env.master_agent [build_phase_i2c_agent] i2c_if was set through config db
+UVM_INFO src/agents/i2c_agent.sv(38) @ 0: uvm_test_top.env.master_agent [build_phase_master_agent] Master driver and sequencer created.
+UVM_INFO src/agents/i2c_monitor.sv(40) @ 0: uvm_test_top.env.master_agent.m_mon [build_phase] BUILD i2c_MONITOR
+UVM_INFO src/agents/i2c_master_sequencer.sv(23) @ 0: uvm_test_top.env.master_agent.m_seqr [build_phase] CFG is set through config db
+UVM_INFO src/agents/i2c_agent.sv(32) @ 0: uvm_test_top.env.slave_agent [build_phase_i2c_agent] i2c_if was set through config db
+UVM_INFO src/agents/i2c_monitor.sv(40) @ 0: uvm_test_top.env.slave_agent.m_mon [build_phase] BUILD i2c_MONITOR
+UVM_INFO src/env/i2c_virtual_sequencer.sv(27) @ 0: uvm_test_top.env.v_seqr [build_phase] CFG is set through config db
+UVM_INFO src/agents/i2c_agent.sv(55) @ 0: uvm_test_top.env.master_agent [connect_phase_i2c_agent] master driver connected.
+UVM_INFO src/tests/i2c_base_test.sv(73) @ 0: uvm_test_top [end_of_elaboration_phase] Verbosity is set to UVM_LOW.
+UVM_INFO src/tests/i2c_base_test.sv(83) @ 0: uvm_test_top [start_of_simulation_phase] Printing topology
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(605) @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------
+Name                           Type                    Size  Value
+------------------------------------------------------------------
+uvm_test_top                   i2c_simple_test         -     @2135
+  env                          i2c_env                 -     @2231
+    cov                        i2c_coverage            -     @2458
+    master_agent               i2c_agent               -     @2362
+      m_drv                    i2c_master_driver       -     @3154
+        rsp_port               uvm_analysis_port       -     @3257
+        seq_item_port          uvm_seq_item_pull_port  -     @3205
+      m_mon                    i2c_monitor             -     @3946
+        i2c_mon_analysis_port  uvm_analysis_port       -     @4006
+      m_seqr                   i2c_master_sequencer    -     @3290
+        rsp_export             uvm_analysis_export     -     @3349
+        seq_item_export        uvm_seq_item_pull_imp   -     @3909
+        arbitration_queue      array                   0     -    
+        lock_queue             array                   0     -    
+        num_last_reqs          integral                32    'd1  
+        num_last_rsps          integral                32    'd1  
+    sb                         i2c_scoreboard          -     @2426
+      m_mon_imp                uvm_analysis_imp_m_mon  -     @4082
+      s_mon_imp                uvm_analysis_imp_s_mon  -     @4132
+    slave_agent                i2c_agent               -     @2395
+      m_mon                    i2c_monitor             -     @4051
+        i2c_mon_analysis_port  uvm_analysis_port       -     @4216
+    v_seqr                     i2c_virtual_sequencer   -     @2490
+      rsp_export               uvm_analysis_export     -     @2551
+      seq_item_export          uvm_seq_item_pull_imp   -     @3113
+      arbitration_queue        array                   0     -    
+      lock_queue               array                   0     -    
+      num_last_reqs            integral                32    'd1  
+      num_last_rsps            integral                32    'd1  
+------------------------------------------------------------------
+
+SDI/Verilog Transaction Recording Facility Version 23.03-s007
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 1107500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 1107500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 1200000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 1200000: uvm_test_top.env.sb [Scoreboard] Register 00000010
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 1287500: uvm_test_top.env.sb [Scoreboard] Write Data 10100000
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 1287500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 1397500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 1397500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 1490000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 1490000: uvm_test_top.env.sb [Scoreboard] Register 00000010
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 1577500: uvm_test_top.env.sb [Scoreboard] Write Data 10110011
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 1577500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 1687500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 1687500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 1780000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00011000
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 1780000: uvm_test_top.env.sb [Scoreboard] Register 00011000
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 1867500: uvm_test_top.env.sb [Scoreboard] Write Data 00000101
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 1867500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 1977500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 1977500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 2070000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 2070000: uvm_test_top.env.sb [Scoreboard] Register 00010100
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 2157500: uvm_test_top.env.sb [Scoreboard] Write Data 01101010
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 2157500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 2267500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 2267500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 2360000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 2360000: uvm_test_top.env.sb [Scoreboard] Register 00100011
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 2447500: uvm_test_top.env.sb [Scoreboard] Write Data 11100010
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 2447500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 2557500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 2557500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 2650000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 2650000: uvm_test_top.env.sb [Scoreboard] Register 00100011
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 2737500: uvm_test_top.env.sb [Scoreboard] Write Data 11010100
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 2737500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 2847500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 2847500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 2940000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 2940000: uvm_test_top.env.sb [Scoreboard] Register 00100100
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 3027500: uvm_test_top.env.sb [Scoreboard] Write Data 10011110
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 3027500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 3137500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 3137500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 3230000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 3230000: uvm_test_top.env.sb [Scoreboard] Register 00100010
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 3317500: uvm_test_top.env.sb [Scoreboard] Write Data 01111011
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 3317500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 3427500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 3427500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 3520000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000110
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 3520000: uvm_test_top.env.sb [Scoreboard] Register 00000110
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 3607500: uvm_test_top.env.sb [Scoreboard] Write Data 10010111
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 3607500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 3717500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 3717500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 3810000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 3810000: uvm_test_top.env.sb [Scoreboard] Register 00001011
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 3897500: uvm_test_top.env.sb [Scoreboard] Write Data 00000001
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 3897500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 4007500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 4007500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 4100000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010000
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 4100000: uvm_test_top.env.sb [Scoreboard] Register 00010000
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 4187500: uvm_test_top.env.sb [Scoreboard] Write Data 10101010
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 4187500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 4297500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 4297500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 4390000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 4390000: uvm_test_top.env.sb [Scoreboard] Register 00010011
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 4477500: uvm_test_top.env.sb [Scoreboard] Write Data 11000100
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 4477500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 4587500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 4587500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 4680000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00011110
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 4680000: uvm_test_top.env.sb [Scoreboard] Register 00011110
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 4767500: uvm_test_top.env.sb [Scoreboard] Write Data 10010011
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 4767500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 4877500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 4877500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 4970000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00011100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 4970000: uvm_test_top.env.sb [Scoreboard] Register 00011100
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 5057500: uvm_test_top.env.sb [Scoreboard] Write Data 10100001
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 5057500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 5167500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 5167500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 5260000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010110
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 5260000: uvm_test_top.env.sb [Scoreboard] Register 00010110
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 5347500: uvm_test_top.env.sb [Scoreboard] Write Data 11000010
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 5347500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 5457500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 5457500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 5550000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 5550000: uvm_test_top.env.sb [Scoreboard] Register 00010010
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 5637500: uvm_test_top.env.sb [Scoreboard] Write Data 10111011
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 5637500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 5747500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 5747500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 5840000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 5840000: uvm_test_top.env.sb [Scoreboard] Register 00100100
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 5927500: uvm_test_top.env.sb [Scoreboard] Write Data 11000111
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 5927500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 6037500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 6037500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 6130000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 6130000: uvm_test_top.env.sb [Scoreboard] Register 00001010
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 6217500: uvm_test_top.env.sb [Scoreboard] Write Data 01001101
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 6217500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 6327500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 6327500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 6420000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100001
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 6420000: uvm_test_top.env.sb [Scoreboard] Register 00100001
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 6507500: uvm_test_top.env.sb [Scoreboard] Write Data 01001101
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 6507500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 6617500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 6617500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 6710000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001001
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 6710000: uvm_test_top.env.sb [Scoreboard] Register 00001001
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 6797500: uvm_test_top.env.sb [Scoreboard] Write Data 10111110
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 6797500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 6907500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 6907500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 7000000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 7000000: uvm_test_top.env.sb [Scoreboard] Register 00100100
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 7087500: uvm_test_top.env.sb [Scoreboard] Write Data 10101001
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 7087500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 7197500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 7197500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 7290000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010111
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 7290000: uvm_test_top.env.sb [Scoreboard] Register 00010111
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 7377500: uvm_test_top.env.sb [Scoreboard] Write Data 10100111
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 7377500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 7487500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 7487500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 7580000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001111
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 7580000: uvm_test_top.env.sb [Scoreboard] Register 00001111
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 7667500: uvm_test_top.env.sb [Scoreboard] Write Data 11100100
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 7667500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 7777500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 7777500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 7870000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 7870000: uvm_test_top.env.sb [Scoreboard] Register 00010010
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 7957500: uvm_test_top.env.sb [Scoreboard] Write Data 00110100
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 7957500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 8067500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 8067500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 8160000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00011110
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 8160000: uvm_test_top.env.sb [Scoreboard] Register 00011110
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 8247500: uvm_test_top.env.sb [Scoreboard] Write Data 10010111
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 8247500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 8357500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 8357500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 8450000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 8450000: uvm_test_top.env.sb [Scoreboard] Register 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 8537500: uvm_test_top.env.sb [Scoreboard] Write Data 01110100
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 8537500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 8647500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 8647500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 8740000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 8740000: uvm_test_top.env.sb [Scoreboard] Register 00100010
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 8827500: uvm_test_top.env.sb [Scoreboard] Write Data 00101001
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 8827500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 8937500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 8937500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 9030000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001111
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 9030000: uvm_test_top.env.sb [Scoreboard] Register 00001111
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 9117500: uvm_test_top.env.sb [Scoreboard] Write Data 11110001
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 9117500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 9227500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 9227500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 9320000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010001
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 9320000: uvm_test_top.env.sb [Scoreboard] Register 00010001
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 9407500: uvm_test_top.env.sb [Scoreboard] Write Data 00110011
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 9407500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 9517500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 9517500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 9610000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010101
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 9610000: uvm_test_top.env.sb [Scoreboard] Register 00010101
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 9697500: uvm_test_top.env.sb [Scoreboard] Write Data 01001101
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 9697500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 9807500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 9807500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 9900000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 9900000: uvm_test_top.env.sb [Scoreboard] Register 00100010
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 9987500: uvm_test_top.env.sb [Scoreboard] Write Data 01111010
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 9987500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 10097500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 10097500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 10190000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 10190000: uvm_test_top.env.sb [Scoreboard] Register 00000100
+UVM_INFO src/agents/i2c_master_base_sequence.sv(120) @ 10265000: uvm_test_top.env.master_agent.m_seqr@@v_seq9.seq [i2c_master_base_sequence] Got NACK from slave
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 10277500: uvm_test_top.env.sb [Scoreboard] Write Data 00100001
+UVM_WARNING src/env/i2c_scoreboard.sv(145) @ 10277500: uvm_test_top.env.sb [Scoreboard] Attempt to write to read-only ADC register ignored
+UVM_ERROR src/env/i2c_scoreboard.sv(301) @ 10277500: uvm_test_top.env.sb [Scoreboard] Expected ack
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 10277500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 10387500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 10387500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 10480000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010101
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 10480000: uvm_test_top.env.sb [Scoreboard] Register 00010101
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 10567500: uvm_test_top.env.sb [Scoreboard] Write Data 10100000
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 10567500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 10677500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 10677500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 10770000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010110
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 10770000: uvm_test_top.env.sb [Scoreboard] Register 00010110
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 10857500: uvm_test_top.env.sb [Scoreboard] Write Data 00110010
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 10857500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 10967500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 10967500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 11060000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00011001
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 11060000: uvm_test_top.env.sb [Scoreboard] Register 00011001
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 11147500: uvm_test_top.env.sb [Scoreboard] Write Data 00111110
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 11147500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 11257500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 11257500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 11350000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 11350000: uvm_test_top.env.sb [Scoreboard] Register 00001011
+UVM_INFO src/env/i2c_scoreboard.sv(137) @ 11437500: uvm_test_top.env.sb [Scoreboard] Write Data 01011100
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 11437500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 12547500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 12547500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 12637500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 12637500: uvm_test_top.env.sb [Scoreboard] Register 00000011
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 12742500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 12742500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 12830000: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(170) @ 12830000: uvm_test_top.env.sb [Scoreboard] ADC Data Match 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 12830000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 12940000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 12940000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 13030000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 13030000: uvm_test_top.env.sb [Scoreboard] Register 00000010
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 13135000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 13135000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 13222500: uvm_test_top.env.sb [Scoreboard] Read Data 10110011
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 13222500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 13222500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 13332500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 13332500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 13422500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 13422500: uvm_test_top.env.sb [Scoreboard] Register 00100011
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 13527500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 13527500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 13615000: uvm_test_top.env.sb [Scoreboard] Read Data 11010100
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 13615000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 13615000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 13725000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 13725000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 13815000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001000
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 13815000: uvm_test_top.env.sb [Scoreboard] Register 00001000
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 13920000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 13920000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 14007500: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 14007500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 14007500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 14117500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 14117500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 14207500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010001
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 14207500: uvm_test_top.env.sb [Scoreboard] Register 00010001
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 14312500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 14312500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 14400000: uvm_test_top.env.sb [Scoreboard] Read Data 00110011
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 14400000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 14400000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 14510000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 14510000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 14600000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00011101
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 14600000: uvm_test_top.env.sb [Scoreboard] Register 00011101
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 14705000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 14705000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 14792500: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 14792500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 14792500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 14902500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 14902500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 14992500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 14992500: uvm_test_top.env.sb [Scoreboard] Register 00001100
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 15097500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 15097500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 15185000: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 15185000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 15185000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 15295000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 15295000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 15385000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 15385000: uvm_test_top.env.sb [Scoreboard] Register 00010100
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 15490000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 15490000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 15577500: uvm_test_top.env.sb [Scoreboard] Read Data 01101010
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 15577500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 15577500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 15687500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 15687500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 15777500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 15777500: uvm_test_top.env.sb [Scoreboard] Register 00010100
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 15882500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 15882500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 15970000: uvm_test_top.env.sb [Scoreboard] Read Data 01101010
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 15970000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 15970000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 16080000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 16080000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 16170000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000101
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 16170000: uvm_test_top.env.sb [Scoreboard] Register 00000101
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 16275000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 16275000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 16362500: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(170) @ 16362500: uvm_test_top.env.sb [Scoreboard] ADC Data Match 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 16362500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 16472500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 16472500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 16562500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000001
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 16562500: uvm_test_top.env.sb [Scoreboard] Register 00000001
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 16667500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 16667500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 16755000: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 16755000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 16755000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 16865000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 16865000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 16955000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100001
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 16955000: uvm_test_top.env.sb [Scoreboard] Register 00100001
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 17060000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 17060000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 17147500: uvm_test_top.env.sb [Scoreboard] Read Data 01001101
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 17147500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 17147500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 17257500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 17257500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 17347500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000110
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 17347500: uvm_test_top.env.sb [Scoreboard] Register 00000110
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 17452500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 17452500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 17540000: uvm_test_top.env.sb [Scoreboard] Read Data 10010111
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 17540000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 17540000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 17650000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 17650000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 17740000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010000
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 17740000: uvm_test_top.env.sb [Scoreboard] Register 00010000
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 17845000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 17845000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 17932500: uvm_test_top.env.sb [Scoreboard] Read Data 10101010
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 17932500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 17932500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 18042500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 18042500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 18132500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000110
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 18132500: uvm_test_top.env.sb [Scoreboard] Register 00000110
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 18237500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 18237500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 18325000: uvm_test_top.env.sb [Scoreboard] Read Data 10010111
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 18325000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 18325000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 18435000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 18435000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 18525000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 18525000: uvm_test_top.env.sb [Scoreboard] Register 00000100
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 18630000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 18630000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 18717500: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(170) @ 18717500: uvm_test_top.env.sb [Scoreboard] ADC Data Match 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 18717500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 18827500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 18827500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 18917500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 18917500: uvm_test_top.env.sb [Scoreboard] Register 00100100
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 19022500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 19022500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 19110000: uvm_test_top.env.sb [Scoreboard] Read Data 10101001
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 19110000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 19110000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 19220000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 19220000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 19310000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010101
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 19310000: uvm_test_top.env.sb [Scoreboard] Register 00010101
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 19415000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 19415000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 19502500: uvm_test_top.env.sb [Scoreboard] Read Data 10100000
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 19502500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 19502500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 19612500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 19612500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 19702500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001110
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 19702500: uvm_test_top.env.sb [Scoreboard] Register 00001110
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 19807500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 19807500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 19895000: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 19895000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 19895000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 20005000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 20005000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 20095000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 20095000: uvm_test_top.env.sb [Scoreboard] Register 00001010
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 20200000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 20200000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 20287500: uvm_test_top.env.sb [Scoreboard] Read Data 01001101
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 20287500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 20287500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 20397500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 20397500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 20487500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00011011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 20487500: uvm_test_top.env.sb [Scoreboard] Register 00011011
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 20592500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 20592500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 20680000: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 20680000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 20680000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 20790000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 20790000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 20880000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001111
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 20880000: uvm_test_top.env.sb [Scoreboard] Register 00001111
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 20985000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 20985000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 21072500: uvm_test_top.env.sb [Scoreboard] Read Data 11110001
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 21072500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 21072500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 21182500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 21182500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 21272500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000101
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 21272500: uvm_test_top.env.sb [Scoreboard] Register 00000101
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 21377500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 21377500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 21465000: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(170) @ 21465000: uvm_test_top.env.sb [Scoreboard] ADC Data Match 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 21465000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 21575000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 21575000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 21665000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 21665000: uvm_test_top.env.sb [Scoreboard] Register 00001011
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 21770000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 21770000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 21857500: uvm_test_top.env.sb [Scoreboard] Read Data 01011100
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 21857500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 21857500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 21967500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 21967500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 22057500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 22057500: uvm_test_top.env.sb [Scoreboard] Register 00000011
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 22162500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 22162500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 22250000: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(170) @ 22250000: uvm_test_top.env.sb [Scoreboard] ADC Data Match 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 22250000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 22360000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 22360000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 22450000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010000
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 22450000: uvm_test_top.env.sb [Scoreboard] Register 00010000
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 22555000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 22555000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 22642500: uvm_test_top.env.sb [Scoreboard] Read Data 10101010
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 22642500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 22642500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 22752500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 22752500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 22842500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010000
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 22842500: uvm_test_top.env.sb [Scoreboard] Register 00010000
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 22947500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 22947500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 23035000: uvm_test_top.env.sb [Scoreboard] Read Data 10101010
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 23035000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 23035000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 23145000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 23145000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 23235000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00100010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 23235000: uvm_test_top.env.sb [Scoreboard] Register 00100010
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 23340000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 23340000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 23427500: uvm_test_top.env.sb [Scoreboard] Read Data 01111010
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 23427500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 23427500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 23537500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 23537500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 23627500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001110
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 23627500: uvm_test_top.env.sb [Scoreboard] Register 00001110
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 23732500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 23732500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 23820000: uvm_test_top.env.sb [Scoreboard] Read Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 23820000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 23820000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 23930000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 23930000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 24020000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000010
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 24020000: uvm_test_top.env.sb [Scoreboard] Register 00000010
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 24125000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 24125000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 24212500: uvm_test_top.env.sb [Scoreboard] Read Data 10110011
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 24212500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 24212500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 24322500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 24322500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 24412500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001111
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 24412500: uvm_test_top.env.sb [Scoreboard] Register 00001111
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 24517500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 24517500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 24605000: uvm_test_top.env.sb [Scoreboard] Read Data 11110001
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 24605000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 24605000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 24715000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 24715000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 24805000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00011100
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 24805000: uvm_test_top.env.sb [Scoreboard] Register 00011100
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 24910000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 24910000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 24997500: uvm_test_top.env.sb [Scoreboard] Read Data 10100001
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 24997500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 24997500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 25107500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 25107500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 25197500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00001011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 25197500: uvm_test_top.env.sb [Scoreboard] Register 00001011
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 25302500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 25302500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 25390000: uvm_test_top.env.sb [Scoreboard] Read Data 01011100
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 25390000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 25390000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 25500000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 25500000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 25590000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010101
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 25590000: uvm_test_top.env.sb [Scoreboard] Register 00010101
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 25695000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 25695000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 25782500: uvm_test_top.env.sb [Scoreboard] Read Data 10100000
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 25782500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 25782500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 25892500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 25892500: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 25982500: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00010011
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 25982500: uvm_test_top.env.sb [Scoreboard] Register 00010011
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 26087500: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 26087500: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 26175000: uvm_test_top.env.sb [Scoreboard] Read Data 11000100
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 26175000: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 26175000: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 26285000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(106) @ 26285000: uvm_test_top.env.sb [Scoreboard] Target Address WRITE 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(129) @ 26375000: uvm_test_top.env.sb [Scoreboard] Register / Write Data 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(131) @ 26375000: uvm_test_top.env.sb [Scoreboard] Register 00000000
+UVM_INFO src/env/i2c_scoreboard.sv(268) @ 26480000: uvm_test_top.env.sb [Scoreboard] Initiating Communication
+UVM_INFO src/env/i2c_scoreboard.sv(115) @ 26480000: uvm_test_top.env.sb [Scoreboard] Target Address READ 0001000
+UVM_INFO src/env/i2c_scoreboard.sv(160) @ 26567500: uvm_test_top.env.sb [Scoreboard] Read Data 01110100
+UVM_INFO src/env/i2c_scoreboard.sv(183) @ 26567500: uvm_test_top.env.sb [Scoreboard] Data Match!
+UVM_INFO src/env/i2c_scoreboard.sv(289) @ 26567500: uvm_test_top.env.sb [Scoreboard] BUS is IDLE
+
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 27570000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_FATAL src/tests/i2c_base_test.sv(100) @ 27570000: uvm_test_top [report_phase] Test failed!
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_catcher.svh(705) @ 27570000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(847) @ 27570000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+Quit count :     1 of    20
+** Report counts by severity
+UVM_INFO :  556
+UVM_WARNING :    1
+UVM_ERROR :    1
+UVM_FATAL :    1
+** Report counts by id
+[RNTST]     1
+[Scoreboard]   542
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+[build_phase]     4
+[build_phase_i2c_agent]     2
+[build_phase_master_agent]     1
+[connect_phase_i2c_agent]     1
+[end_of_elaboration_phase]     1
+[i2c_master_base_sequence]     1
+[report_phase]     1
+[start_of_simulation_phase]     1
+
+Simulation complete via $finish(1) at time 27570 US + 39
+/mnt/apps/prebuilt/eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:135     $finish;
+xcelium> ^C
+xcelium> exit
+xmsim: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "i2c_reg_access_cg" will not be dumped to database as per_instance option value is set to 0:./src/env/i2c_coverage.sv, 42.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "i2c_reg_access_cg" will not be dumped to database as per_instance option value is set to 0:./src/env/i2c_coverage.sv, 42.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "i2c_reg_access_cg" will not be dumped to database as per_instance option value is set to 0:./src/env/i2c_coverage.sv, 42.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  test_sv1
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_0bd69bd5_02ce4ba3.ucm (reused)
+  data               :  ./cov_work/scope/test_sv1/icc_0bd69bd5_02ce4ba3.ucd
+TOOL:	xrun(64)	23.03-s007: Exiting on Feb 04, 2026 at 15:48:53 EET  (total: 00:12:19)

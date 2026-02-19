@@ -1,0 +1,6 @@
+Begin checking placement ... (start mem=4549.9M, init mem=4581.9M)
+*info: Placed = 1866          
+*info: Unplaced = 0           
+Placement Density:75.28%(66631/88510)
+Placement Density (including fixed std cells):75.28%(66631/88510)
+Finished checkPlace (total: cpu=0:00:00.3, real=0:00:00.0; vio checks: cpu=0:00:00.1, real=0:00:00.0; mem=4581.9M)

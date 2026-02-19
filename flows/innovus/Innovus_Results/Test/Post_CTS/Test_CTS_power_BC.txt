@@ -1,0 +1,104 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 21.35-s114_1 (64bit) 10/13/2022 12:11 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2026-Feb-10 23:16:04 (2026-Feb-10 21:16:04 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: I2CAndMemory
+*
+*	Liberty Libraries used: 
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/IO_CELLS_3V/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_3V_LPMOS_typ_1_80V_3_30V_25C.lib
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/D_CELLS_HD/v3_0/liberty_LPMOS/v3_0_0/PVT_1_80V_range/D_CELLS_HD_LPMOS_typ_1_80V_25C.lib
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/IO_CELLS_3V/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_3V_LPMOS_fast_1_98V_3_60V_m40C.lib
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/D_CELLS_HD/v3_0/liberty_LPMOS/v3_0_0/PVT_1_80V_range/D_CELLS_HD_LPMOS_fast_1_98V_m40C.lib
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/IO_CELLS_3V/v2_1/liberty_LPMOS/v2_1_0/PVT_1_80V_3_30V_range/IO_CELLS_3V_LPMOS_slow_1_62V_3_00V_175C.lib
+*	        /mnt/apps/prebuilt/EDA/designkits/xfab/XKIT/x_all/cadence/XFAB_AMS_RefKit-cadence_IC61/v2_5_1/pdk/xh018/diglibs/D_CELLS_HD/v3_0/liberty_LPMOS/v3_0_0/PVT_1_80V_range/D_CELLS_HD_LPMOS_slow_1_62V_175C.lib
+*
+*	Power Domain used: 
+*              Rail:        vdd      Voltage:       1.98 
+*
+*       Dynamic View: PVT_1_80_V_BC_VIEW
+*
+*       Leakage View: PVT_1_80_V_BC_VIEW
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile /home/p/paschalk/Desktop/I2C_Memory/flows/innovus/Innovus_Results/Test/Post_CTS/Test_CTS_power_BC.txt -view PVT_1_80_V_BC_VIEW
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.61386358 	   70.5917%
+Total Switching Power:       0.25573414 	   29.4083%
+Total Leakage Power:         0.00000016 	    0.0000%
+Total Power:                 0.86959787 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.5429     0.09006   9.578e-08      0.6329       72.78 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                    0.04154     0.05184   6.514e-08     0.09338       10.74 
+Clock (Combinational)            0.02945      0.1138   1.898e-09      0.1433       16.48 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                             0.6139      0.2557   1.628e-07      0.8696         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+vdd                      1.98     0.6139      0.2557   1.628e-07      0.8696         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                              0.02945      0.1138   1.898e-09      0.1433       16.48 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)     0.02945      0.1138   1.898e-09      0.1433       16.48 
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.125000 usec 
+Clock Toggle Rate:    16.0000 Mhz 
+Clock Static Probability:  0.5240
+
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power: mem_inst/CTS_ccl_a_buf_00003 (BUHDX12):           0.0195 
+*                Highest Leakage Power:       CTS_ccl_a_buf_00002 (BUHDX12):        2.372e-10 
+*          Total Cap:      5.41822e-11 F
+*          Total instances in design:  1874
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

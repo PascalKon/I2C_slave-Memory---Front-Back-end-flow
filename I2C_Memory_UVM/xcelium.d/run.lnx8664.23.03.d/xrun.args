@@ -1,0 +1,17 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-batch
+-f
+run.args
+-coverage
+all
++VERBOSITY=UVM_NONE
++UVM_TESTNAME=i2c_adc_test
+-l
+Multiple_Tests_xrun_Results/i2c_adc_test_1.log
++DUMPNAME=Multiple_Tests_xrun_Results/i2c_adc_test_1.vcd
+-covtest
+MT_i2c_adc_test
+-covoverwrite

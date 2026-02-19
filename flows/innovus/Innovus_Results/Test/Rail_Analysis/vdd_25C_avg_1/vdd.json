@@ -1,0 +1,39 @@
+{
+    "net_name": "vdd",
+    "smg": {
+        "config": {
+            "name": "vdd",
+            "output_path": "\/home\/p\/paschalk\/Desktop\/I2C_Memory\/flows\/innovus\/Innovus_Results\/Test\/Rail_Analysis\/vdd_25C_avg_1",
+            "nominal_voltage": "1.79999995"
+        },
+        "result": {
+            "DefInstData": {
+                "path": "\/home\/p\/paschalk\/Desktop\/I2C_Memory\/flows\/innovus\/Innovus_Results\/Test\/Rail_Analysis\/vdd_25C_avg_1\/vdd.defInstData",
+                "type": "proto::voltus.def_instdata_mgr.proto.DefInstDataManager"
+            },
+            "layerInfo": {
+                "path": "\/home\/p\/paschalk\/Desktop\/I2C_Memory\/flows\/innovus\/Innovus_Results\/Test\/Rail_Analysis\/vdd_25C_avg_1\/layerInfo",
+                "type": "proto.voltus.layer_manager.LayerManager"
+            },
+            "pgdb": {
+                "path": "\/home\/p\/paschalk\/Desktop\/I2C_Memory\/flows\/innovus\/Innovus_Results\/Test\/Rail_Analysis\/vdd_25C_avg_1"
+            },
+            "cellview": {
+                "path": "\/home\/p\/paschalk\/Desktop\/I2C_Memory\/flows\/innovus\/Innovus_Results\/Test\/Rail_Analysis\/vdd_25C_avg_1\/vdd.cellviews",
+                "type": "txt"
+            },
+            "pgv_table": {
+                "path": "\/home\/p\/paschalk\/Desktop\/I2C_Memory\/flows\/innovus\/Innovus_Results\/Test\/Rail_Analysis\/vdd_25C_avg_1\/vdd.pgv_table.rpt",
+                "type": "txt"
+            },
+            "grid_report": {
+                "path": "\/home\/p\/paschalk\/Desktop\/I2C_Memory\/flows\/innovus\/Innovus_Results\/Test\/Rail_Analysis\/vdd_25C_avg_1\/vdd.grid.report",
+                "type": "txt"
+            },
+            "missing_pgv": {
+                "path": "\/home\/p\/paschalk\/Desktop\/I2C_Memory\/flows\/innovus\/Innovus_Results\/Test\/Rail_Analysis\/vdd_25C_avg_1\/vdd.missingPGVData.protobuf",
+                "type": "protobuf.VOLTUS.SMGDATA.MissingPGV"
+            }
+        }
+    }
+}
